@@ -1,0 +1,60 @@
+/*for the p5 file in fabbb/html/bgjs*/
+  html, body {
+  width: 2000px;
+  background-color: #d5f45a;
+  }
+
+
+/* show text in button */
+    .show{
+      visibility: visible;
+    }
+
+/* hide text in button */
+    .hide{
+      visibility: hidden;
+    }
+
+
+/* animation */
+    .spacing {
+      letter-spacing:2px;
+      -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 14s; /* Safari 4.0 - 8.0 */
+      animation-name: example;
+      animation-duration: 14s;
+    }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example {
+        0% {letter-spacing: 1px;}
+        25% {letter-spacing: 2px;}
+        50% {letter-spacing: 1px;}
+        100% {letter-spacing: 2px;}
+        }
+
+        /* Standard syntax */
+        @keyframes example {
+        0% {letter-spacing: 1px;}
+        25% {letter-spacing: 2px;}
+        50% {letter-spacing: 1px;}
+        100% {letter-spacing: 2px;}
+        }
+
+
+/* change color */
+    .red{
+      color:red;
+    }
+    
+    .blue{
+      color:blue;
+    }
+    
+    .green{
+      background-color:green;
+    }
+    
+    .yellow{
+      background-color:yellow;
+    }
