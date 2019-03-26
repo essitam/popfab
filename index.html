@@ -4,27 +4,27 @@
         <title> Good evening, </title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-            
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
         <!--random js-->
-        <script type="text/javascript" src="random.js"></script>
+        <script type="text/javascript" src="js/random.js"></script>
         <!--bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <!--p5 libraries-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
-        <!--<script type="text/javascript" src="p5.dom.js"></script>-->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
-        <!--<script type="text/javascript" src="p5.sound.min.js"></script>-->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.js"></script>
+        <script type="text/javascript" src="js/p5.dom.js"></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script> -->
+        <script type="text/javascript" src="js/p5.sound.min.js"></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.js"></script> -->
         <!--ml5-->
         <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
         <!--place your order js-->
-        <script type="text/javascript" src="app1.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/app1.js" charset="utf-8"></script>
         <!--<script type="text/javascript" src="app.js"></script>-->
         <!--<script type="text/javascript" src="voice.js"></script>-->
         <!--css-->
-        <link href="colorshifts.css" rel="stylesheet" type="text/css">
+        <link href="css/colorshifts.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="assets/style.css" type="text/css" />
 
 
@@ -36,7 +36,7 @@
             p-2 {
                 transform: skew 20;
             }
-            
+
             .box {
                     width: 25px;
                     height: 25px;
@@ -51,7 +51,7 @@
                     -o-transition:  0.5s ease-out;
                     transition:  0.5s ease-out;
               }
-            
+
              .box:hover {
                     background-image: linear-gradient(to right, blue, purple);
                     font-size:14px;
@@ -64,32 +64,32 @@
     <body>
         <!--the picture div needs to stay for colorshifts.css-->
     <div id="picture">
-        
-    </div> 
-        
-    <div class="d-flex flex-row container"> 
-               
+
+    </div>
+
+    <div class="d-flex flex-row container">
+
         <div id="mycanvas" class="p-2 justify-content-start float-left">
         </div>
-                        
 
-        <div class="p-2"> 
+
+        <div class="p-2">
                 <a class="btn btn-dark btn-block btn-sm box" href="pdfs/anarchivalcinema.pdf" target="_blank" role="button">Anarchival Cinema</a>
-                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/kekeland.pdf" target="_blank" role="button">Kekeland</a> 
-                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/humanbutnonhuman.pdf" target="_blank" role="button">They are not human but they are not non-human</a> 
+                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/kekeland.pdf" target="_blank" role="button">Kekeland</a>
+                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/humanbutnonhuman.pdf" target="_blank" role="button">They are not human but they are not non-human</a>
                 <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/tigertravelling.pdf" target="_blank" role="button">when a tiger travels to other planets...</a>
                 <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/hijackedfutures.pdf" target="_blank" role="button">Hijacked Futures X The Anti-Hijacking of dreams</a>
-                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/hijackedfutures.pdf" target="_blank" role="button">For a cinematic mode of existence</a> 
-                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="vrey/index.html" target="_blank" role="button">i'm <em> vrey </em> into you</a> 
-    
+                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="pdfs/hijackedfutures.pdf" target="_blank" role="button">For a cinematic mode of existence</a>
+                <a class="btn btn-dark mt-1 btn-block btn-sm box" href="vrey/index.html" target="_blank" role="button">i'm <em> vrey </em> into you</a>
 
-            <div> 
+
+            <div>
                 <input type="button" class="btn btn-dark mt-4 btn-block" onClick="displayImg()" value="Randomize Spectroteque">
                 <img src="img/firewalkwithme.jpg" name="canvas" class="img-fluid mt-2"/>
             </div>
-            <div> 
+            <div>
                 <a href="javascript:window.open('thingie-float.html','thinghies','width=600,height=400')" target="_blank"> <img src="img/button5.png" class="mt-1 float-right"> </a>
-                <a onClick="gray()"> <img src="img/win31icon.png" class="mt-1 float-right"> </a> 
+                <a onClick="gray()"> <img src="img/win31icon.png" class="mt-1 float-right"> </a>
                 <a href=javascript:window.open('diagrams/zoom/index.html','diagrams','width=500,height=640') target="_blank"> <img src="img/button2.png" class="mt-1 float-right"> </a>
                 <a href="vrey/index.html" target="_blank"> <img src="img/button3.jpg" class="mt-1 float-right"> </a>
                 <a href="javascript:window.open('fabulation.html','mypopuptitle','width=600,height=400')" target="_blank"> <img src="img/button4.jpg" class="mt-1 float-right"> </a>
@@ -99,10 +99,10 @@
                 <!--<input type="button" class="btn btn-dark mt-4 btn-block" onClick="theSound()" value="Sounddddd">-->
             </div>
         </div>
-    </div> 
+    </div>
 
-        <script type="text/javascript" src="p5.play.js"></script>
-        <script type="text/javascript" src="rita-full.min.js"></script>
+        <script type="text/javascript" src="js/p5.play.js"></script>
+        <script type="text/javascript" src="js/rita-full.min.js"></script>
 
     </body>
 </html>
