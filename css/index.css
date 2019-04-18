@@ -1,0 +1,37 @@
+
+#mycanvas {
+    text-align: justify;
+    color: red;
+}
+
+body {
+    background-color: black;
+}
+
+
+p-2 {
+      transform: skew 20;
+}
+
+.box {
+                width: 25px;
+                height: 25px;
+                color:none;
+                margin-top: 20px;
+                background-image: linear-gradient(to bottom right, red, yellow);
+                margin-left: auto;
+                border:none;
+                font-size:0px;
+                -webkit-transition:  0.5s ease-out;
+                -moz-transition:  0.5s ease-out;
+                -o-transition:  0.5s ease-out;
+                transition:  0.5s ease-out;
+          }
+
+.box:hover {
+                background-image: linear-gradient(to right, blue, purple);
+                font-size:14px;
+                color:red;
+                width:100%;
+                cursor: pointer;
+          }
