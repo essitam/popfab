@@ -10,7 +10,7 @@ function setup(){
   cnv.position(0,0);
   //cnv.parent('thecanvas');
   cnv.style('z-index', '-1');
-  background(240, 255, 181);
+  background(240, 255, 181, 1);
 
 
 
@@ -40,8 +40,8 @@ function setup(){
    var button4 = select("#btn4");
    button4.mouseClicked(moveee);
 
-   var button5 = select("#btn5");
-   button5.mouseClicked(glideee);
+   // var button5 = select("#btn5");
+   // button5.mouseClicked(goto);
 
 
     textOne = select('#one');
@@ -81,6 +81,7 @@ function appear2(){
   textTwo.removeClass('hide');
   textTwo.addClass('show');
 }
+
 function spzzz(){
   for (var i = 0; i < p.length; i++){
    p[i].addClass('spacing');
@@ -111,3 +112,15 @@ function glideee(){
     // p[i].mouseClicked(spaz);
   };
 }
+
+// function goto(){
+//   var str = document.getElementById("kekes").innerHTML
+//   console.log(str);
+//   // var pos = str.search("locate");
+//   // document.getElementById("demo").innerHTML = pos;
+// }
+
+// function draw(){
+//   blendMode(DIFFERENCE);
+//
+// }

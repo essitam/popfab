@@ -1,0 +1,16 @@
+/*Instant page search, & <mark> the result, then replace with a <wbr> tag after 5 seconds. 
+**
+Now ecma 6 support large sets of unicode chars.
+**
+Iterative to all words occurence
+*/  
+/*
+In the form of a bookmarklet:
+
+javascript:void%20function(){function%20e(e){r.innerHTML=r.innerHTML.replace(e,%22%3Cmark%3E%22+e+%22%3C/mark%3E%22),window.setTimeout(n,5e3)}function%20n(){r.innerHTML=r.innerHTML.replace(%22mark%22,%22wbr%22)}var%20r=document.body;e(prompt(%22Recherche%22,%22paradoxe%22))}();
+
+
+*/
+
+body,input{font:small-caption;background-color:black;color:#afa}
+input {width:99%;font-size:6em}
