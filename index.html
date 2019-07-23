@@ -25,12 +25,29 @@
         <link href="css/colorshifts.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/index.css" type="text/css" />
 
+        <style>
+        iframe {
+          z-index:-2;
+          position:absolute;
+        }
+
+        #consolog{
+          background: black;
+          width: 1000px;
+          height: 100px;
+          position: fixed;
+          overflow: scroll;
+        }
+        </style>
 
     </head>
     <body>
+
+    <!-- <div>
+      <iframe src="fabbb.html" width="100%" height="1000px"></iframe>
+    </div> -->
         <!--the picture div needs to stay for colorshifts.css-->
     <div id="picture">
-
     </div>
 
     <div class="d-flex flex-row container">
@@ -38,6 +55,7 @@
         <div id="mycanvas" class="p-2 justify-content-start float-left">
         </div>
 
+        <div id="consolog"></div>
 
         <div class="p-2">
                 <a class="btn btn-dark btn-block btn-sm box" href="pdfs/anarchivalcinema.pdf" target="_blank" role="button">Anarchival Cinema</a>
