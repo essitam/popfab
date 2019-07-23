@@ -10,6 +10,8 @@ var timer = 10;
 var nextTime = timer;
 let button;
 let anotherStrata;
+let myfi;
+let datta1;
 
 
 function preload() {
@@ -28,10 +30,10 @@ function preload() {
 
 function setup() {
 
-  let createcanvas = createCanvas(window.innerWidth /2 , window.innerHeight);
+  let createcanvas = createCanvas(window.innerWidth /2 , window.innerHeight/2);
   createcanvas.parent('mycanvas');
   //create a new canvas (only appears if you spccc right now)
-  anotherStrata = createGraphics(window.innerWidth /2 , window.innerHeight);
+  anotherStrata = createGraphics(window.innerWidth /2 , window.innerHeight/2);
   anotherStrata.clear();
   // mobilenet = ml5.imageClassifier('MobileNet', modelReady);
   bg = loadImage("img/background.jpg");
@@ -47,6 +49,11 @@ function setup() {
   // create a markov model w' n=4
   markov = new RiMarkov(8);
 
+  datta1 = data1.join(' ');
+  datta2 = data2.join(' ');
+  datta3 = data3.join(' ');
+  datta4 = data4.join(' ');
+  datta5 = data5.join(' ');
   // load text into the model
   markov.loadText(data1.join(' '));
   markov.loadText(data2.join(' '));
@@ -98,10 +105,62 @@ function drawText() {
 
   background(bg);
   textSize(20 + (mouseX / width)*33);
-  text(lines.join(' '), 50, 201, 400, 530);
+  myfi = text(lines.join(' '), 50, 201, 400, 530);
   // text('PDF1', 1000, 700);
   // text('PDF2', 1080, 700);
-  console.log(lines);
+
+  // console.log(lines);
+}
+
+function myF() {
+  // console.log(datta1);
+  // var r = lines.toString();
+  // console.log(r);
+  // var str = datta1;
+  var n = datta1.includes(lines);
+  var m = datta2.includes(lines);
+  var o = datta3.includes(lines);
+  var p = datta4.includes(lines);
+  var q = datta5.includes(lines);
+
+  if (n==true){
+        let newa = createA("assets/1.txt", lines);
+        newa.parent('consolog');
+        newa.style('font-family', 'inconsolota');
+
+        // createP();
+      // a.select("demo");
+  }
+  if (m==true){
+      let newa = createA("assets/2.txt", lines);
+      newa.parent('consolog');
+      // createP();
+
+      // a.select("demo");
+  }
+
+  if (o==true){
+      let newa = createA("assets/3kekes.txt", lines);
+      newa.parent('consolog');
+      // createP();
+
+      // a.select("demo");
+  }
+
+  if (p==true){
+     createA("assets/4tiger.txt", lines);
+     createP();
+
+      // a.select("demo");
+  }
+
+  if (q==true){
+      createA("assets/5hijacked.txt", lines);
+      createP();
+
+      // a.select("demo");
+  }
+  // document.getElementById("demo").innerHTML = n;
 }
 
 function theSound(){
@@ -131,14 +190,11 @@ function mouseClicked() {
 
   x = 100;
   y = 220;
-  lines = markov.generateSentences(10);
+  lines = markov.generateSentences(1);
   drawText();
   mySound.play();
   anotherStrata.clear();
-
-
-
-
+  myF();
 }
 
 function keyTyped(){
