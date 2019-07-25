@@ -61,6 +61,8 @@ function setup() {
   markov.loadText(data4.join(' '));
   markov.loadText(data5.join(' '));
   drawText();
+ 
+  jumpi("ooo");
   // var firstPDF = createA('pdfs/humanbutnonhuman.pdf', 'They are not human but they are not non-human', 1000, 700);
   // firstPDF.class("btn btn-dark rounded float-top");
   // var secondPDF = createA('pdfs/anarchivalcinema.pdf', 'Anarchival Cinema', 1000, 700);
@@ -111,56 +113,49 @@ function drawText() {
 
   // console.log(lines);
 }
+function scrollToBottom(id){
+   var div = document.getElementById(id);
+   div.scrollTop = div.scrollHeight - div.clientHeight;
+}
 
 function myF() {
-  // console.log(datta1);
-  // var r = lines.toString();
-  // console.log(r);
-  // var str = datta1;
+  
   var n = datta1.includes(lines);
   var m = datta2.includes(lines);
   var o = datta3.includes(lines);
   var p = datta4.includes(lines);
   var q = datta5.includes(lines);
-
+ let newa;
   if (n==true){
-        let newa = createA("assets/1.txt", lines);
-        newa.parent('consolog');
-        newa.style('font-family', 'inconsolota');
-
-        // createP();
-      // a.select("demo");
+      newa = createA("assets/1.txt", lines);
   }
   if (m==true){
-      let newa = createA("assets/2.txt", lines);
-      newa.parent('consolog');
-      // createP();
-
-      // a.select("demo");
+      newa = createA("assets/2.txt", lines);
   }
 
   if (o==true){
-      let newa = createA("assets/3kekes.txt", lines);
-      newa.parent('consolog');
-      // createP();
+      newa = createA("assets/3kekes.txt", lines);
 
-      // a.select("demo");
   }
 
   if (p==true){
-     createA("assets/4tiger.txt", lines);
-     createP();
+     newa = createA("assets/4tiger.txt", lines);
 
-      // a.select("demo");
   }
 
   if (q==true){
-      createA("assets/5hijacked.txt", lines);
-      createP();
-
-      // a.select("demo");
+      newa = createA("assets/5hijacked.txt", lines);
   }
+  
   // document.getElementById("demo").innerHTML = n;
+  newa.style('font-family', 'monospace');
+  newa.style('color', 'green');
+  newa.style('font-size', '8pt');
+  newa.parent('consolog');
+
+  let newb = createElement('br');
+  newb.parent('consolog');
+  scrollToBottom('consolog');
 }
 
 function theSound(){
@@ -219,4 +214,44 @@ function mouseReleased(){
 
     }
 
+}
+
+function jumpi(duck) {
+         createP(duck).addClass('textit').hide();
+        
+        const texts = selectAll('.textit');
+
+       for (let i = 0; i < texts.length; i++) {
+          const paragraph = texts[i].html();
+          const words = paragraph.split('');
+          for (let j = 0; j < words.length; j++) {
+            if (words[j]=='o'){
+            var jumpingo = createA('#', words[j]);
+            jumpingo.mousePressed(becomeApple);
+          } else if(words[j]==' '){
+            var spacer = createA('#', words[j]);
+            spacer.mousePressed(becomeApple2);
+          } else {
+            const spannedWord = createSpan(words[j]);
+          }
+
+        }
+      }
+                  
+     function becomeApple(){
+       this.addClass('growing');
+     }
+     function becomeApple2(){
+       this.addClass('spacing');
+     }
+
+  }
+
+function onoverlay() {
+  document.getElementById("overlay").style.display = "block";
+  // jumpi("jjjjjooo");
+}
+
+function offoverlay() {
+  document.getElementById("overlay").style.display = "none";
 }

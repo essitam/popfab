@@ -1,0 +1,70 @@
+
+  fontsize = 32;
+
+let dancingWords = [];
+var jumpingo;
+var texts;
+
+
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+function setup() {
+  // createCanvas(710, 400);
+  noCanvas();
+  textSize(fontsize);
+  textAlign(CENTER, CENTER);
+        var popit = createDiv();
+
+        var fab =createP(
+"a number of propositions (11, or infinite) for fabulation"+"Becoming pop is when the whole so-called insides of a bodying burst out from the body in a rushed plop and at the same time, get uncontained and try with all the machines to pretend containment not truly for others but mostly for the operation’s sake. Like when in the middle of reading or in the middle of walking or let’s say in the middle of wandering, ‘something’ crosses, the suggestion of a universe flashes itself out and bathes the whole fielding into a non-end-non-beginning plane that swallows it all, provoking the inevitable involuntary burst, in the feeling of burst, uncontainment becomes irresistible for itself and pushes at great speed in order to reach and join the rays of the overtaken field. Like when a bite of a mango invades all experience and leaves room for nothing else or like when a ray of purpleness cuts through the gut of the universe and swallows perception into no-longer perceptibility but mere feeling lives.").addClass('text').hide();
+        // fab.parent('')
+        texts = selectAll('.text');
+
+        for (let i = 0; i < texts.length; i++) {
+          const paragraph = texts[i].html();
+          const words = paragraph.split('');
+          for (let j = 0; j < words.length; j++) {
+            if (words[j]=='o'){
+            var jumpingo = createA('#', words[j]);
+            jumpingo.mousePressed(becomeApple);
+          } else if(words[j]==' '){
+            var spacer = createA('#', words[j]);
+            spacer.mousePressed(becomeApple2);
+          } else {
+            const spannedWord = createSpan(words[j]);
+          }
+
+        }
+      }
+
+
+     }
+
+
+     function becomeApple(){
+       this.addClass('growing');
+     }
+     function becomeApple2(){
+       this.addClass('spacing');
+     }
+
+function draw() {
+  // background(160);
+
+  // Set the gap between letters and the left and top margin
+  let gap = 50;
+  let margin = 10;
+  // translate(margin * 4, margin * 4);
+
+  // Set the counter to start at the character you want
+  // in this case 35, which is the # symbol
+  let counter = 35;
+
+}
