@@ -5,24 +5,44 @@
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
-<!--         <script src="jumping-o/bubbles.js"></script> -->
-            <link rel="stylesheet" href="css/fabstyle.css" type="text/css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"></script>
+    <!-- <script type="text/javascript"  src="js/blackc.js"></script> -->
 
-          <script src="jumping-o/ooo.js"></script>
-<style>
-  div {
-    display: none;
-    }
-    </style>
   </head>
-  <body onload="setup()">
-    <div id="eleven" class="text">
-      
+  <body onload="blackcat('coperino')">
+    <script>
+    let copey;
+    function preload() {
+     copey = loadSound("assets/bell.mp3");
+    }
 
-⛶.  Fabulation moves in the continuous exploration of the event, which is to say in the event’s unfolding. Like Tito says “ “. This exploration is always in drift, that is, in play with all the tendencies (as virtual poles) that enter the event, making them mix but never confusing them. The nip is play and fight at the same time, or walking out with slippers in the morning at night.
+    function setup(){
+     frameRate(60);
 
-A glaze of infinite orange metal enamel cup sparks all experience, inflecting (reflect forward, as Bateson would say) novel universes in its wake
+    }
+//     function mousePressed(){
+//  trigSound(copey);
+// }
 
-    </div>
+    const colors = {"b":"copey", "crispy":"copey"}
+    function blackcat(id){
+    let ll = document.getElementById(id)
+    ll.innerHTML = ll.innerText.split("").map(l => `<a href="#" onclick="trigSound(${colors[l]})">${l}</a>`).join("")
+    }
+
+    function trigSound(buf) {
+    // buf.play(0, 1.0, 1.0, 0, buf.duration()-0.5);
+    buf.play(0, 1.0, 1.0, 0, buf.duration());
+
+    // buf.play();
+    }
+
+
+</script>
+
+    <div id="coperino">a a a a a abbbbbbbbb crispy</div>
+    <!-- <button onclick="blackcat('coperino')">cat</button> -->
+
+
   </body>
 </html>

@@ -1,0 +1,110 @@
+.a {
+  color: #d94a6f;
+}
+
+.b {
+  color: #3a97f7;
+}
+
+.c {
+  color: #fffa73;
+}
+
+.d {
+  color: #8747f6;
+}
+
+.e {
+  color: #454545;
+}
+
+.f {
+  color: #8ef271;
+}
+
+.g {
+  color: #f29737;
+}
+
+.h {
+  color: #d1a239;
+}
+
+.i {
+  color: #70f9fd;
+}
+
+.j {
+  color: #f091d4;
+}
+
+.k {
+  color: #a957e5;
+}
+
+.l {
+  color: #4f3aec;
+}
+
+.m {
+  color: #e18695;
+}
+
+.n {
+  color: #faec75;
+}
+
+.o {
+  color: #ffffff;
+  letter-spacing:2px;
+  -webkit-animation-name: grow; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 14s infinite alternate; /* Safari 4.0 - 8.0 */
+  -webkit-animation: grow 14s infinite alternate; /* Safari 4.0 - 8.0 */
+
+  animation-name: grow;
+  animation-duration: 14s;
+}
+
+.p {
+  color: #cb63ef;
+}
+
+.q {
+  color: #d2bfb7;
+}
+
+.r {
+  color: #f091d4;
+}
+
+.s {
+  color: #ec4025;
+}
+
+.t {
+  color: #57964d;
+}
+
+.u {
+  color: #e5bf74;
+}
+
+.v {
+  color: #f29840;
+}
+
+.w {
+  color: #fffa8c;
+}
+
+.x {
+  color: #a97f40;
+}
+
+.y {
+  color: #fae085;
+}
+
+.z {
+  color: #4b258d;
+}
