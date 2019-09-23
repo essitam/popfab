@@ -37,13 +37,13 @@
 #div {
     -webkit-animation: colorPulse 10s infinite alternate;
 }
- 
+
 body {
-     background-color: #45CEEF;    
+     background-color: #45CEEF;
      -webkit-animation: pulse 40s infinite alternate;
- 
+
 }
- 
+
 h1 {
  font: 90px/70px 'Allan', arial, serif;
  text-align: center;
@@ -51,16 +51,20 @@ h1 {
  color: rgba(0,0,0, 0.5);
  text-shadow: rgba(255,255,255,0.5) 2px 2px 2px;
 }
- 
-p {
+
+/* p {
  font: 15px/25px Helvetica, arial, sans-serif;
  text-align: center;
  color: rgba(0,0,0, 0.7);
-}
- 
+} */
+
 #picture {
 
  -webkit-box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
  -moz-box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+
+.pulse {
+  -webkit-animation: pulse 40s infinite alternate;
 }
