@@ -1,4 +1,4 @@
-var lines, markov, data1, data2, data3, data4, data5, data6, data7,  x = 160, y = 240;
+var lines, markov, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10,  x = 160, y = 240;
 var mySound;
 let myCanvas;
 var randomImageLocation;
@@ -95,7 +95,7 @@ function setup() {
   markov.loadText(data16.join(' '));
   drawText();
 
-  jumpi("ooo");
+  // jumpi("ooo");
   // var firstPDF = createA('pdfs/humanbutnonhuman.pdf', 'They are not human but they are not non-human', 1000, 700);
   // firstPDF.class("btn btn-dark rounded float-top");
   // var secondPDF = createA('pdfs/anarchivalcinema.pdf', 'Anarchival Cinema', 1000, 700);
@@ -106,7 +106,6 @@ function setup() {
                     //     button.position(100 + 200, 65);
                     //     button.mousePressed(speak);
                     //     button.parent('notice');
-
 }
 
 function windowResized() {
@@ -165,159 +164,206 @@ function scrollToBottom(id){
 //     console.log('Sorry, we are out of ' + expr + '.');
 // }
 // }
+// //
+// function myF() {
+// //   switch (fruit) {
+// //     case datta1.includes(lines) :
+// //       let newa = createA("assets/newtxt/1.txt", lines);
+// //       break;
+// //     }
+// //     function myF() {
+// //     return datta1 ? function ()
+// //     {newa = createA("assets/newtxt/1.txt", lines);}
+// //          // : condition2 ? value2
+// //          // : condition3 ? value3
+// //           : value4;
+// // }
+// //
+// //   }
+//   var pf1 = datta1.includes(lines);
+//   var pf2 = datta2.includes(lines);
+//   var pf3 = datta3.includes(lines);
+//   var pf4 = datta4.includes(lines);
+//   var pf5 = datta5.includes(lines);
+//   var pf6 = datta6.includes(lines);
+//   var pf7 = datta7.includes(lines);
+//   var pf8 = datta8.includes(lines);
+//   var pf9 = datta9.includes(lines);
+//   var pf10 = datta10.includes(lines);
+//   var pf11 = datta11.includes(lines);
+//   var pf12 = datta12.includes(lines);
+//   var pf13 = datta13.includes(lines);
+//   var pf14 = datta14.includes(lines);
+//   var pf15 = datta15.includes(lines);
+//   var pf16 = datta16.includes(lines);
 //
-function myF() {
-//   switch (fruit) {
-//     case datta1.includes(lines) :
-//       let newa = createA("assets/newtxt/1.txt", lines);
-//       break;
-//     }
-//     function myF() {
-//     return datta1 ? function ()
-//     {newa = createA("assets/newtxt/1.txt", lines);}
-//          // : condition2 ? value2
-//          // : condition3 ? value3
-//           : value4;
-// }
+//  // let newa;
+//  let linky;
 //
+//   if (pf1==true){
+//       linky = "assets/newtxt/1.txt";
+//   } else if (pf2==true){
+//       linky = "assets/newtxt/alexis.txt";
+//   } else if (pf3==true){
+//       linky = "assets/newtxt/an_actual_occasion.txt";
+//   } else if (pf4==true){
+//      linky = "assets/newtxt/black_reason.txt";
+//   } else if (pf5==true){
+//       linky = "assets/newtxt/chris.txt";
+//   } else if (pf6==true){
+//       linky = "assets/newtxt/dreaming_abrahao.txt"
+//   } else if (pf7==true){
+//       linky = "assets/newtxt/essayperspectivism.txt";
+//   } else if (pf8==true){
+//       linky = "assets/newtxt/experimenting_immediation.txt";
+//   } else if (pf9==true){
+//      linky = "assets/newtxt/filho.txt";
+//   } else if (pf10==true){
+//       linky = "assets/newtxt/for_a_cinematic.txt";
+//   } else if (pf11==true){
+//       linky = "assets/newtxt/hijaked.txt";
+//   } else if (pf12==true){
+//       linky = "assets/newtxt/notes_on_space.txt";
+//   } else if (pf13==true){
+//       linky = "assets/newtxt/pfmf.txt";
+//   } else if (pf14==true){
+//      linky = "assets/newtxt/savage_marx.txt";
+//   } else if (pf15==true){
+//       linky = "assets/newtxt/tiger.txt";
+//   } else if (pf16==true){
+//       linky = "assets/newtxt/xapirimuu.txt";
 //   }
-  var pf1 = datta1.includes(lines);
-  var pf2 = datta2.includes(lines);
-  var pf3 = datta3.includes(lines);
-  var pf4 = datta4.includes(lines);
-  var pf5 = datta5.includes(lines);
-  var pf6 = datta6.includes(lines);
-  var pf7 = datta7.includes(lines);
-  var pf8 = datta8.includes(lines);
-  var pf9 = datta9.includes(lines);
-  var pf10 = datta10.includes(lines);
-  var pf11 = datta11.includes(lines);
-  var pf12 = datta12.includes(lines);
-  var pf13 = datta13.includes(lines);
-  var pf14 = datta14.includes(lines);
-  var pf15 = datta15.includes(lines);
-  var pf16 = datta16.includes(lines);
 
- let newa;
-  if (pf1==true){
-      newa = createA("assets/newtxt/1.txt", lines);
-  }
-  if (pf2==true){
-      newa = createA("assets/newtxt/alexis.txt", lines);
-  }
-  if (pf3==true){
-      newa = createA("assets/newtxt/an_actual_occasion.txt", lines);
-  }
-  if (pf4==true){
-     newa = createA("assets/newtxt/black_reason.txt", lines);
-  }
-  if (pf5==true){
-      newa = createA("assets/newtxt/chris.txt", lines);
-  }
-  if (pf6==true){
-      newa = createA("assets/newtxt/dreaming_abrahao.txt", lines);
-  }
-  if (pf7==true){
-      newa = createA("assets/newtxt/essayperspectivism.txt", lines);
-  }
-  if (pf8==true){
-      newa = createA("assets/newtxt/experimenting_immediation.txt", lines);
-  }
-  if (pf9==true){
-     newa = createA("assets/newtxt/filho.txt", lines);
-  }
-  if (pf10==true){
-      newa = createA("assets/newtxt/for_a_cinematic.txt", lines);
-  }
-  if (pf11==true){
-      newa = createA("assets/newtxt/hijaked.txt", lines);
-  }
-  if (pf12==true){
-      newa = createA("assets/newtxt/notes_on_space.txt", lines);
-  }
-  if (pf13==true){
-      newa = createA("assets/newtxt/pfmf.txt", lines);
-  }
-  if (pf14==true){
-     newa = createA("assets/newtxt/savage_marx.txt", lines);
-  }
-  if (pf15==true){
-      newa = createA("assets/newtxt/tiger.txt", lines);
-  }
-  if (pf16==true){
-      newa = createA("assets/newtxt/xapirimuu.txt", lines);
-  }
- // // console.log('1');
- // switch (n = n.includes(lines)) {
- // case n = datta1.includes(lines) == true:
- // console.log("datta1");
- // // var newa = document.createElement('a');
- // //  var createAText = document.createTextNode(lines);
- // //    newa.setAttribute('href', "assets/newtxt/1.txt");
- // //    newa.appendChild(createAText);
- // //    getTheTableTag.appendChild(createA)
- // newa = createA("assets/newtxt/1.txt", lines);
- // break;
- // case datta2.includes(lines) == true:
- // console.log("datta2");
- // break;
- // case datta3.includes(lines) == true:
- // console.log("datta3");
- // break;
- // case datta4.includes(lines) == true:
- // console.log("datta4");
- // break;
- // case datta5.includes(lines) == true:
- // console.log("datta5");
- // break;
- // case datta6.includes(lines) == true:
- // console.log("datta6");
- // break;
- // case datta7.includes(lines) == true:
- // console.log("datta7");
- // break;
- // case datta8.includes(lines) == true:
- // console.log("datta8");
- // break;
- // case datta9.includes(lines) == true:
- // console.log("datta9");
- // break;
- // case datta10.includes(lines) == true:
- // console.log("datta10");
- // break;
- // case datta11.includes(lines) == true:
- // console.log("datta11");
- // break;
- // case datta12.includes(lines) == true:
- // console.log("datta12");
- // break;
- // case datta13.includes(lines) == true:
- // console.log("datta13");
- // break;
- // case datta14.includes(lines) == true:
- // console.log("datta14");
- // break;
- // case datta15.includes(lines) == true:
- // console.log("datta15");
- // break;
- // case datta16.includes(lines) == true:
- // console.log("datta16");
- // break;
- // let consol = getElementById('consolog');
- // consol.appendChild(newa);
+  // switch (n = n.includes(lines)) {
+  // case n = datta1.includes(lines) == true:
+  // console.log("datta1");
+  // // var newa = document.createElement('a');
+  // //  var createAText = document.createTextNode(lines);
+  // //    newa.setAttribute('href', "assets/newtxt/1.txt");
+  // //    newa.appendChild(createAText);
+  // //    getTheTableTag.appendChild(createA)
+  // newa = createA("assets/newtxt/1.txt", lines);
+  // break;
+  // case datta2.includes(lines) == true:
+  // console.log("datta2");
+  // break;
+  // case datta3.includes(lines) == true:
+  // console.log("datta3");
+  // break;
+  // case datta4.includes(lines) == true:
+  // console.log("datta4");
+  // break;
+  // case datta5.includes(lines) == true:
+  // console.log("datta5");
+  // break;
+  // case datta6.includes(lines) == true:
+  // console.log("datta6");
+  // break;
+  // case datta7.includes(lines) == true:
+  // console.log("datta7");
+  // break;
+  // case datta8.includes(lines) == true:
+  // console.log("datta8");
+  // break;
+  // case datta9.includes(lines) == true:
+  // console.log("datta9");
+  // break;
+  // case datta10.includes(lines) == true:
+  // console.log("datta10");
+  // break;
+  // case datta11.includes(lines) == true:
+  // console.log("datta11");
+  // break;
+  // case datta12.includes(lines) == true:
+  // console.log("datta12");
+  // break;
+  // case datta13.includes(lines) == true:
+  // console.log("datta13");
+  // break;
+  // case datta14.includes(lines) == true:
+  // console.log("datta14");
+  // break;
+  // case datta15.includes(lines) == true:
+  // console.log("datta15");
+  // break;
+  // case datta16.includes(lines) == true:
+  // console.log("datta16");
+  // break;
 
-  newa.style('font-family', 'monospace');
-  newa.style('color', 'green');
-  newa.style('font-size', '12pt');
-  newa.parent('consolog');
-  newa.class('pulse');
+  // var myBodyId = document.getElementById("consolog");
+  // var newa = document.createElement('a');
+  // var newBaitText = document.createTextNode(lines);
+  // newa.setAttribute('href', linky);
+  // // we create new things above
+  // // we append them to the page body below
+  // newBaitTag.appendChild(newBaitText);
+  // myBodyId.appendChild(newBaitTag);
+//
+//   let newa = createA(linky, lines);
+//
+//   newa.style('font-family', 'monospace');
+//   newa.style('color', 'green');
+//   newa.style('font-size', '12pt');
+//   newa.parent('consolog');
+//   newa.class('pulse');
+//
+//   let newb = createElement('br');
+//   newb.parent('consolog');
+//   scrollToBottom('consolog');
+// // }
+  // }
 
-  let newb = createElement('br');
-  newb.parent('consolog');
-  scrollToBottom('consolog');
-// }
+  function matchymatchy(){
+
+    var str1 = match(datta1, lines);
+    var str2 = match(datta2, lines);
+    var str3 = match(datta3, lines);
+    var str4 = match(datta4, lines);
+    var str5 = match(datta5, lines);
+    var str6 = match(datta6, lines);
+    var str7 = match(datta7, lines);
+    var str8 = match(datta8, lines);
+    var str9 = match(datta9, lines);
+    var str10 = match(datta10, lines);
+    var str11 = match(datta11, lines);
+    var str12 = match(datta12, lines);
+    var str13 = match(datta13, lines);
+    var str14 = match(datta14, lines);
+    var str15 = match(datta15, lines);
+    var str16 = match(datta16, lines);
+let linky;
+    // textSize(50);
+    str1 ? linky = "assets/newtxt/1.txt": null;
+    str2 ? linky = "assets/newtxt/1.txt": null;
+    str3 ? linky = "assets/newtxt/1.txt": null;
+    str4 ? linky = "assets/newtxt/1.txt": null;
+    str5 ? linky = "assets/newtxt/1.txt": null;
+    str6 ? linky = "assets/newtxt/1.txt": null;
+    str7 ? linky = "assets/newtxt/1.txt": null;
+    str8 ? linky = "assets/newtxt/1.txt": null;
+    str9 ? linky = "assets/newtxt/1.txt": null;
+    str10 ? linky = "assets/newtxt/1.txt": null;
+    str11 ? linky = "assets/newtxt/1.txt": null;
+    str12 ? linky = "assets/newtxt/1.txt": null;
+    str13 ? linky = "assets/newtxt/1.txt": null;
+    str14 ? linky = "assets/newtxt/1.txt": null;
+    str15 ? linky = "assets/newtxt/1.txt": null;
+    str16 ? linky = "assets/newtxt/1.txt": null;
+
+      let newa = createA(linky, lines);
+
+      newa.style('font-family', 'monospace');
+      newa.style('color', 'green');
+      newa.style('font-size', '12pt');
+      newa.parent('consolog');
+      newa.class('pulse');
+
+      let newb = createElement('br');
+      newb.parent('consolog');
+      scrollToBottom('consolog');
+    // }
+
   }
-
 function theSound(){
     var mytimer = setInterval(function(){
     var voices = speechSynthesis.getVoices();
@@ -332,9 +378,6 @@ function theSound(){
         }  }, 1000)
          window.speechSynthesis.cancel();
 }
-
-
-
 function mouseClicked() {
   typed="";
   x = 100;
@@ -343,9 +386,9 @@ function mouseClicked() {
   drawText();
   mySound.play();
   anotherStrata.clear();
-  myF();
+  // myF();
+  matchymatchy();
 }
-
 function keyTyped(){
   if (keyCode === 32){
     anotherStrata.line(0, mouseY, 300, mouseY)
@@ -357,7 +400,6 @@ function keyTyped(){
   pop();
 }
 
-
 function mouseReleased(){
            index = index + 1;
           if (index == img.length){
@@ -365,44 +407,39 @@ function mouseReleased(){
     }
 }
 
-function jumpi(duck) {
-         createP(duck).addClass('textit').hide();
-
-        const texts = selectAll('.textit');
-
-       for (let i = 0; i < texts.length; i++) {
-          const paragraph = texts[i].html();
-          const words = paragraph.split('');
-          for (let j = 0; j < words.length; j++) {
-            if (words[j]=='o'){
-            var jumpingo = createA('#', words[j]);
-            jumpingo.mousePressed(becomeApple);
-          } else if(words[j]==' '){
-            var spacer = createA('#', words[j]);
-            spacer.mousePressed(becomeApple2);
-          } else {
-            const spannedWord = createSpan(words[j]);
-          }
-
-        }
-      }
-
-     function becomeApple(){
-       this.addClass('growing');
-     }
-     function becomeApple2(){
-       this.addClass('spacing');
-     }
-
-  }
+// function jumpi(duck) {
+//          createP(duck).addClass('textit').hide();
 //
-// function onoverlay() {
-//   document.getElementById("overlay").style.display = "block";
-//   // jumpi("jjjjjooo");
-// }
+//         const texts = selectAll('.textit');
+//
+//        for (let i = 0; i < texts.length; i++) {
+//           const paragraph = texts[i].html();
+//           const words = paragraph.split('');
+//           for (let j = 0; j < words.length; j++) {
+//             if (words[j]=='o'){
+//             var jumpingo = createA('#', words[j]);
+//             jumpingo.mousePressed(becomeApple);
+//           } else if(words[j]==' '){
+//             var spacer = createA('#', words[j]);
+//             spacer.mousePressed(becomeApple2);
+//           } else {
+//             const spannedWord = createSpan(words[j]);
+//           }
+//
+//         }
+//       }
+//
+//      function becomeApple(){
+//        this.addClass('growing');
+//      }
+//      function becomeApple2(){
+//        this.addClass('spacing');
+//      }
+//
+//   }
+
 function onoverlay() {
   document.getElementById("overlay").style.display = "block";
-  // jumpi("jjjjjooo");
 }
 
 function offoverlay() {

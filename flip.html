@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+	<html lang="en" dir="ltr">
+	<head>
+		<title></title>
+		 <meta charset="utf-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+		<script type="text/javascript" src="js/p5.play.js"></script>
+		<script src="js/p5.collide2d.min.js"></script>
+		<script type="text/javascript" src="js/p5.dom.js"></script>
+		<!--<script src="p5.collide2D-master/p5.collide2d.js"></script>-->
+
+
+	</head>
+	<body>
+<script>
+  let img0;
+let img1;
+// let string = "hellocreature";
+
+function preload() {
+  createCanvas(200,200);
+  img0 = loadImage('img/button2.png');
+  img1 = loadImage('img/button3.jpg');
+}
+
+function setup() {
+  background(img1);
+
+  // image(img1, 0, 0);
+  // fill(0, 102, 153);
+    let img3 = text('word', 10, 60);
+
+  blend(img3, 0, 0, 33, 100, 67, 0, 33, 100, ADD);
+}
+
+  </script>
+
+	</body>
+</html>
