@@ -181,16 +181,17 @@ const matchymatchy = () => {
   str16 ? linky = "assets/newtxt/xapirimuu.txt": null;
 
   const anchor = document.createElement('a');
-  const list = document.getElementById('consolog');
+  const list = document.getElementById('suppy');
   const li = document.createElement('ul');
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", "img/button8.png");
   anchor.href = linky;
   anchor.innerText = lines;
+  anchor.classList.add("fabfabfab");
   anchor.appendChild(iimg);
   li.appendChild(anchor);
   list.appendChild(li);
-  scrollToBottom('consolog');
+  scrollToBottom("consolog");
 };
 function theSound(){
     var mytimer = setInterval(function(){
