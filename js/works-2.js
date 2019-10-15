@@ -40,7 +40,7 @@ function draw() {
   c1 = color(val, 102, 0);
   c2 = color(0, vall, 153);
   setGradient(mouseX, mouseY, 100 , 100, c1, c2, X_AXIS);
-  ellipse(mouseX, mouseY, 100, 100);
+  ellipse(mouseX, mouseY, 150, 10);
 
   // If it's time for a new point
   if (millis() > next && painting) {
@@ -166,7 +166,7 @@ class Particle {
     fill(c2, this.lifespan/2);
     noStroke();
     // fill(blue);
-    ellipse(this.position.x,this.position.y, 100, 100);
+    ellipse(this.position.x,this.position.y, 150, 150);
     // If we need to draw a line
     if (other) {
       line(this.position.x, this.position.y, other.position.x, other.position.y);
