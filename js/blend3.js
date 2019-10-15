@@ -9,12 +9,7 @@ let X_AXIS = 2;
 let  c1;
 let  c2;
 let img3;
-// text('result', 200, 200, window.innerWidth, window.innerHeight);
-
-function preload() {
-result = loadStrings('assets/4tiger.txt');
-createDiv('this is some text');
-}
+var nav = false;
 
 function pickColor() {
   r = random(150, 256);
@@ -22,9 +17,7 @@ function pickColor() {
   b = random(100, 256);
   c1 = color(204, 102, 0);
   c2 = color(0, 102, 153);
-  //fill(r,g,b);
 }
-
 
 function setup() {
   let ccc = createCanvas(window.innerWidth, window.innerHeight);
@@ -36,69 +29,57 @@ function setup() {
   yspeed= 5;
   pickColor();
   collideDebug(true);
+  }
 
-img3 = createDiv('hello');
-img3.position(100,100);
-img3.addClass('hell');
-
-// img3.parent('hellooo');
-
-}
-
-function draw(){
-  background ('yellow');
-  blendMode(DIFFERENCE);
-          fill(r,g,b);
-   // text(result, 200, 200, window.innerWidth, window.innerHeight);
+    function draw(){
+      background ('yellow');
+     if (mouseIsPressed) {
+    blendMode(DIFFERENCE);
+    fill(r,g,b);
     ellipse(100,100,100,100);
-     rect(y, x, 800, 100);
-     setGradient(0, 0, width , height, c1, c2, X_AXIS);
-     setGradient(x, y, 800, 200, c2, c1, Y_AXIS);
-     rect(x, y, 800, 600);
-     // rect(x, y, 800, 600);
-     // rect(x, y, 800, 600);
-      fill(r,b,b);
-      ellipse(x, f, 100, 100);
-      ellipse(x, -y, 100, 100);
-      ellipse(x, y+200, 100, 100);
-       // fill(r,g,g);
-      ellipse(x*3, y, 100, 100);
-      rect(y, x, 800, 600);
-      rect(y*3, x, 800, 600);
-      rect(y*5, y, 800, 600);
-      ellipse(f, y, 100, 100);
-      ellipse(f, x, 100, 100);
-      ellipse(x, f, 100, 100);
-      // blend(img3, 0, 0, 33, 100, 67, 0, 33, 100, ADD);
-
-
+    rect(y, x, 800, 100);
+    setGradient(0, 0, width , height, c1, c2, X_AXIS);
+    setGradient(x, y, 800, 200, c2, c1, Y_AXIS);
+    rect(x, y, 800, 600);
+    fill(r,b,b);
+    ellipse(x, f, 100, 100);
+    ellipse(x, -y, 100, 100);
+    ellipse(x, y+200, 100, 100);
+    ellipse(x*3, y, 100, 100);
+    rect(y, x, 800, 600);
+    rect(y*3, x, 800, 600);
+    rect(y*5, y, 800, 600);
+    ellipse(f, y, 100, 100);
+    ellipse(f, x, 100, 100);
+    ellipse(x, f, 100, 100);
       a=a-1;
-
-
       x = x + xspeed + f;
       y = y + yspeed + f;
+        if (x >= width){
+          xspeed = -xspeed;
+          x= width - f;
+          pickColor();
+        } else if (x <= -1000){
+          xspeed = -xspeed;
+          x = f-100;
+          pickColor();
+        }
 
-      if (x >= width){
-        xspeed = -xspeed;
-        x= width - f;
-        pickColor();
-      } else if (x <= -1000){
-        xspeed = -xspeed;
-        x = f-100;
-        pickColor();
+        if (y >= height){
+          yspeed = -yspeed;
+          y = height - f;
+          pickColor();
+        } else if (y<=-1000){
+          yspeed = -yspeed;
+          y = f-100;
+          pickColor();
+        }
       }
 
-      if (y >= height){
-        yspeed = -yspeed;
-        y = height - f;
-        pickColor();
-      } else if (y<=-1000){
-        yspeed = -yspeed;
-        y = f-100;
-        pickColor();
-      }
 
 }
+
+
 
 function mousePressed() {
   // Check if mouse is inside the circle
@@ -108,14 +89,18 @@ function mousePressed() {
     r = random(255);
     g = random(255);
     b = random(255);
-    blackcat('gradientt');
+
   }
 }
+//   loop();
+// }
+// function mouseReleased() {
+//   noLoop();
+// }
 
 
 function setGradient(x, y, w, h, c1, c2, axis) {
   noFill();
-
   if (axis === Y_AXIS) {
     // Top to bottom gradient
     for (let i = y; i <= y + h; i++) {
