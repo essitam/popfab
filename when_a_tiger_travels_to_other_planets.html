@@ -4,6 +4,10 @@
 	<head>
 		<title></title>
 		 <meta charset="utf-8">
+		 <!--bootstrap-->
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 		<script src="js/modez.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
 		<script type="text/javascript" src="js/p5.play.js"></script>
@@ -11,10 +15,19 @@
 		<script type="text/javascript" src="js/p5.dom.js"></script>
 		<link rel="stylesheet" href="css/blackcat.css" type="text/css" />
 		<script type="text/javascript" src="js/blackcat.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/consolog.css" type="text/css" />
+		<script type="text/javascript" src="js/consolog.js" charset="utf-8"></script>
 		<script type="text/javascript" src="js/blackc.js" charset="utf-8"></script>
 		<!--<script src="p5.collide2D-master/p5.collide2d.js"></script>-->
 		<script src="js/toggler.js"></script>
+		<script type="text/javascript" src="js/rita-full.min.js"></script>
+
+		<!--random js-->
+		<script type="text/javascript" src="js/random.js"></script>
+		<link rel="stylesheet" href="css/fab.css" type="text/css" />
+
 <style>
+
 .hell{
 	color: blue;
 	mix-blend-mode: difference;
@@ -45,20 +58,29 @@ button{
 }
 </style>
 	</head>
-	<body>
+	<body >
 		<script></script>
-
-    <img src="img/button8.png" onclick="blackcat('gradientt');">
+		<div id="consolog" class="fixed-bottom con">
+					<div  id="suppy">
+					</div>
+					<div class="buttonz" id="buttonz">
+						<a href="vrey/index.html" target="_blank"> <img src="img/button13.png" class="mt-1 float-right"> </a>
+						<a href="vrey/index.html" target="_blank"> <img src="img/popfab.png" class="mt-1 float-right"> </a>
+						<a href="vrey/index.html" target="_blank"> <img src="img/button8.png" class="mt-1 float-right"> </a>
+						<a href="vrey/index.html" target="_blank"> <img src="img/button12.png" class="mt-1 float-right"> </a>
+						<a href="vrey/index.html" target="_blank"> <img src="img/button19.png" class="mt-1 float-right"> </a>
+						<a href="vrey/index.html" target="_blank"> <img src="img/button14.png" class="mt-1 float-right"> </a>
+					</div>
+			</div>
+    <img src="img/button8.png" onclick="blackc('gradientt');">
     <img src="img/button18.png" onclick="pfing=true;">
     <img src="img/button15.png" onclick="pfing=false;">
-    <img src="img/button16.png">
+    <img src="img/button16.png" onclick="cons();">
 
 		<div id="hellooo">
 		</div>
 
  <div class="hell redredred scroll-box" id="gradientt">
-
-
       when a tiger travels to other planets…
       <br><br>
       Under what circumstances does a tiger pounce? What possesses this cat to swim? To eat a child? To climb a tree? Wait: is a tiger’s -esqueness sufficiently feline to inspire it to climb? To be determined. To be invented. When does a tiger travel to other planets? What makes a tiger fly? [..]. [The child playing tiger] departs from dynamic situations, extending the animal’s -esqueness beyond all known territory.

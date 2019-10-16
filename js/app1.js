@@ -31,6 +31,7 @@ function preload() {
   data14 = loadStrings('assets/newtxt/savage_marx.txt');
   data15 = loadStrings('assets/newtxt/tiger.txt');
   data16 = loadStrings('assets/newtxt/xapirimuu.txt');
+  data17 = loadStrings('assets/newtxt/door.txt');
 
   mySound = loadSound('assets/bell.mp3');
   img[0] = loadImage("img/img0.png");
@@ -76,6 +77,8 @@ function setup() {
   datta14 = data14.join(' ');
   datta15 = data15.join(' ');
   datta16 = data16.join(' ');
+  datta17 = data17.join(' ');
+
   // load text into the model
   markov.loadText(data1.join(' '));
   markov.loadText(data2.join(' '));
@@ -93,6 +96,7 @@ function setup() {
   markov.loadText(data14.join(' '));
   markov.loadText(data15.join(' '));
   markov.loadText(data16.join(' '));
+  markov.loadText(data17.join(' '));
   drawText();
 
   // jumpi("ooo");
@@ -162,24 +166,28 @@ const matchymatchy = () => {
   var str14 = match(datta14, lines);
   var str15 = match(datta15, lines);
   var str16 = match(datta16, lines);
+  var str17 = match(datta17, lines);
+
   let linky;
   let imgy;
-  str1 ? linky = "assets/newtxt/1.txt": null;
-  str2 ? linky = "assets/newtxt/alexis.txt": null;
-  str3 ? linky = "assets/newtxt/an_actual_occasion.txt": null;
-  str4 ? linky = "assets/newtxt/black_reason.txt": null;
-  str5 ? linky = "assets/newtxt/chris.txt": null;
-  str6 ? linky = "assets/newtxt/dreaming_abrahao.txt": null;
-  str7 ? linky = "assets/newtxt/essayperspectivism.txt": null;
-  str8 ? linky = "assets/newtxt/experimenting_immediation.txt": null;
-  str9 ? linky = "assets/newtxt/filho.txt": null;
-  str10 ? linky = "assets/newtxt/for_a_cinematic.txt": null;
-  str11 ? linky = "assets/newtxt/hijaked.txt": null;
-  str12 ? linky = "assets/newtxt/notes_on_space.html": null;
-  str13 ? linky = "assets/newtxt/pfmf.txt": null;
-  str14 ? linky = "assets/newtxt/savage_marx.txt": null;
-  str15 ? linky = "assets/newtxt/tiger.txt": null;
-  str16 ? linky = "assets/newtxt/xapirimuu.txt": null;
+
+  str1 ? linky = "anarchival_cinema_and_the_powers_of_the_false.html": null;
+  str2 ? linky = "in_between_hunger_and_appetite.html": null;
+  str3 ? linky = "epistolary_romantics.html": null;
+  str4 ? linky = "black_reason_racism_and_ase.html": null;
+  str5 ? linky = "fabulation_as_a_somatic_apparatus_to_be_other.html": null;
+  str6 ? linky = "dreaming_and_the_collective_management_of_dreams_as_transformational_operators.html": null;
+  str7 ? linky = "a_perspectivist_semiotics_essay.html": null;
+  str8 ? linky = "experimenting_immediation.html": null;
+  str9 ? linky = "a_body_a_room.html": null;
+  str10 ? linky = "for_a_cinematic_mode_of_existence.html": null;
+  str11 ? linky = "hijacked.html": null;
+  str12 ? linky = "notes_on_space.html": null;
+  str13 ? linky = "pfmf.html": null;
+  str14 ? linky = "savage_marx.html": null;
+  str15 ? linky = "when_a_tiger_travels_to_other_planets.html": null;
+  str16 ? linky = "xapirimuu": null;
+  str17 ? linky = "passages.html": null;
 
   str1 ? imgy = "img/button9.png": null;
   str2 ? imgy = "img/button10.png": null;
@@ -197,6 +205,8 @@ const matchymatchy = () => {
   str14 ? imgy = "img/button22.png": null;
   str15 ? imgy = "img/button2.png": null;
   str16 ? imgy = "img/button3.png": null;
+  str17 ? imgy = "img/button3.png": null;
+
 
   const anchor = document.createElement('a');
   const list = document.getElementById('suppy');

@@ -1,0 +1,53 @@
+.con{
+  border: solid;
+  border-width: 20px;
+  /* border-color: red; */
+  border-image:
+   linear-gradient(
+     /* to bottom, */
+     red,
+     rgba(0, 0, 0, 0)
+   ) 1 100%;
+}
+
+.fabfabfab{
+   background-image: linear-gradient(to bottom, red, orange);
+   font-family: arial black;
+   font-size: 14px;
+
+}
+.fabfabfab:hover{
+  background-image:linear-gradient(to left, red, blue);
+}
+#consolog{
+  /* background-image: linear-gradient(to bottom right, red, blue, green); */
+
+
+  /* background-image: url('img/1111.png'); */
+  /* width: 100%;
+  height: 200px;
+  position: fixed;
+  z-index:2;
+  overflow: scroll;
+  background: transparent; */
+
+}
+#suppy{
+
+}
+::-webkit-scrollbar {
+width: 0px;  /* Remove scrollbar space */
+background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+#buttonz{
+  z-index:4;
+}
+.buttonz{
+  background-image: linear-gradient(90deg, rgba(58,180,136,1) 0%, rgba(253,29,29,0.8936708860759494) 50%, rgba(252,176,69,1) 100%);
+
+}

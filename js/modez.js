@@ -31,6 +31,28 @@ function pickColor() {
   c2 = color(0, 102, 153);
 }
 
+
+function preload() {
+  data1 = loadStrings('assets/newtxt/1.txt');
+  data2 = loadStrings('assets/newtxt/alexis.txt');
+  data3 = loadStrings('assets/newtxt/an_actual_occasion.txt');
+  data4 = loadStrings('assets/newtxt/black_reason.txt');
+  data5 = loadStrings('assets/newtxt/chris.txt');
+  data6 = loadStrings('assets/newtxt/dreaming_abrahao.txt');
+  data7 = loadStrings('assets/newtxt/essayperspectivism.txt');
+  data8 = loadStrings('assets/newtxt/experimenting_immediation.txt');
+  data9 = loadStrings('assets/newtxt/filho.txt');
+  data10 = loadStrings('assets/newtxt/for_a_cinematic.txt');
+  data11 = loadStrings('assets/newtxt/hijaked.txt');
+  data12 = loadStrings('assets/newtxt/notes_on_space.txt');
+  data13 = loadStrings('assets/newtxt/pfmf.txt');
+  data14 = loadStrings('assets/newtxt/savage_marx.txt');
+  data15 = loadStrings('assets/newtxt/tiger.txt');
+  data16 = loadStrings('assets/newtxt/xapirimuu.txt');
+  data17 = loadStrings('assets/newtxt/door.txt');
+}
+
+
 function setup() {
   let ccc = createCanvas(window.innerWidth, window.innerHeight);
   ccc.parent('hellooo');
@@ -49,6 +71,48 @@ function setup() {
   slider2.style('width', '80px');
   current = createVector(0,0);
   previous = createVector(0,0);
+
+     lines = ["click to place your order!"];
+
+    // create a markov model w' n=4
+    markov = new RiMarkov(8);
+
+    datta1 = data1.join(' ');
+    datta2 = data2.join(' ');
+    datta3 = data3.join(' ');
+    datta4 = data4.join(' ');
+    datta5 = data5.join(' ');
+    datta6 = data6.join(' ');
+    datta7 = data7.join(' ');
+    datta8 = data8.join(' ');
+    datta9 = data9.join(' ');
+    datta10 = data10.join(' ');
+    datta11 = data11.join(' ');
+    datta12 = data12.join(' ');
+    datta13 = data13.join(' ');
+    datta14 = data14.join(' ');
+    datta15 = data15.join(' ');
+    datta16 = data16.join(' ');
+    datta17 = data17.join(' ');
+
+    // load text into the model
+    markov.loadText(data1.join(' '));
+    markov.loadText(data2.join(' '));
+    markov.loadText(data3.join(' '));
+    markov.loadText(data4.join(' '));
+    markov.loadText(data5.join(' '));
+    markov.loadText(data6.join(' '));
+    markov.loadText(data7.join(' '));
+    markov.loadText(data8.join(' '));
+    markov.loadText(data9.join(' '));
+    markov.loadText(data10.join(' '));
+    markov.loadText(data11.join(' '));
+    markov.loadText(data12.join(' '));
+    markov.loadText(data13.join(' '));
+    markov.loadText(data14.join(' '));
+    markov.loadText(data15.join(' '));
+    markov.loadText(data16.join(' '));
+    markov.loadText(data17.join(' '));
   }
 
     function draw(){
@@ -105,7 +169,7 @@ function setup() {
           c1 = color(val, 102, 0);
           c2 = color(0, vall, 153);
           setGradient(mouseX, mouseY, 100 , 100, c1, c2, X_AXIS);
-          ellipse(mouseX, mouseY, 150, 10);
+          ellipse(mouseX, mouseY, 150, 150);
 
           // If it's time for a new point
           if (millis() > next && painting) {
@@ -149,7 +213,7 @@ function mouseReleased() {
 
 
 function mousePressed() {
-  
+
   // Check if mouse is inside the circle
   let d = dist(mouseX, mouseY, 100, 100);
   if (d < 100) {
