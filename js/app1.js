@@ -163,6 +163,7 @@ const matchymatchy = () => {
   var str15 = match(datta15, lines);
   var str16 = match(datta16, lines);
   let linky;
+  let imgy;
   str1 ? linky = "assets/newtxt/1.txt": null;
   str2 ? linky = "assets/newtxt/alexis.txt": null;
   str3 ? linky = "assets/newtxt/an_actual_occasion.txt": null;
@@ -180,18 +181,36 @@ const matchymatchy = () => {
   str15 ? linky = "assets/newtxt/tiger.txt": null;
   str16 ? linky = "assets/newtxt/xapirimuu.txt": null;
 
+  str1 ? imgy = "img/button9.png": null;
+  str2 ? imgy = "img/button10.png": null;
+  str3 ? imgy = "img/button11.png": null;
+  str4 ? imgy = "img/button12.png": null;
+  str5 ? imgy = "img/button13.png": null;
+  str6 ? imgy = "img/button14.png": null;
+  str7 ? imgy = "img/button15.png": null;
+  str8 ? imgy = "img/button16.png": null;
+  str9 ? imgy = "img/button17.png": null;
+  str10 ? imgy = "img/button18.png": null;
+  str11 ? imgy = "img/button19.png": null;
+  str12 ? imgy = "img/button20.png": null;
+  str13 ? imgy = "img/button21.png": null;
+  str14 ? imgy = "img/button22.png": null;
+  str15 ? imgy = "img/button2.png": null;
+  str16 ? imgy = "img/button3.png": null;
+
   const anchor = document.createElement('a');
   const list = document.getElementById('suppy');
   const li = document.createElement('ul');
   const iimg = document.createElement("IMG");
-  iimg.setAttribute("src", "img/button8.png");
+  iimg.setAttribute("src", imgy);
   anchor.href = linky;
   anchor.innerText = lines;
   anchor.classList.add("fabfabfab");
   anchor.appendChild(iimg);
   li.appendChild(anchor);
   list.appendChild(li);
-  scrollToBottom("consolog");
+  scrollToBottom("suppy");
+  scrollToBottom("buttonz");
 };
 function theSound(){
     var mytimer = setInterval(function(){
