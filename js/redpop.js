@@ -40,7 +40,7 @@ function draw() {
   c1 = color(val, 102, 0);
   c2 = color(0, vall, 153);
   setGradient(mouseX, mouseY, 100 , 100, c1, c2, X_AXIS);
-  ellipse(mouseX, mouseY, 150, 10);
+  ellipse(mouseX, mouseY, 150, 150);
 
   // If it's time for a new point
   if (millis() > next && painting) {
