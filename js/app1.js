@@ -42,7 +42,7 @@ function preload() {
 
 
 function setup() {
-  loadme();
+
 
   let createcanvas = createCanvas(window.innerWidth /2 , window.innerHeight - 150);
   createcanvas.parent('mycanvas');
