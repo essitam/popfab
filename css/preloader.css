@@ -14,8 +14,8 @@
   width:150px;
   height:150px;
   margin:-75px 0 0 -75px;
-  border:3px solid transparent;
-  border-top-color:white;
+  /* border:3px solid transparent; */
+  /* border-top-color:white; */
   border-radius:100%;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
@@ -29,7 +29,8 @@
   right:5px;
   bottom:5px;
   border:3px solid transparent;
-  border-top-color: yellow;
+  /* border-top-color: yellow; */
+  background-image: url(../img/button16.png);
   border-radius:100%;
   -webkit-animation: spin 3s linear infinite;
           animation: spin 3s linear infinite;
@@ -42,28 +43,28 @@
   right:12px;
   bottom:12px;
   border:3px solid transparent;
-  border-top-color:orange;
+  /* border-top-color:orange; */
   border-radius:100%;
   -webkit-animation: spin 1.5s linear infinite;
           animation: spin 1.5s linear infinite;
 }
 @-webkit-keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
+  0%   {
+    -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   }
-  100% { 
-    -webkit-transform: rotate(360deg); 
+  100% {
+    -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   }
 }
 @keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
+  0%   {
+    -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   }
-  100% { 
-    -webkit-transform: rotate(360deg); 
+  100% {
+    -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   }
 }
@@ -71,7 +72,7 @@
 #loader-wrapper .loader-section {
   position:fixed;
   top:0;
-  background:#333;
+  background-image: url('../img/button19.png');
   width:51%;
   height:100%;
   z-index:1000;
