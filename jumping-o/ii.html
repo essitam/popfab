@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="p53d.js"></script>
+    <script type="text/javascript" src="p5.easycam.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+    let imgs = [];
+let num = 6;
+let f=0;
+function preload() {
+
+  for (let i = 0; i < num; i++) {
+  // imgs[i] = loadImage("https://picsum.photos/400/400/?image=" + i * 10);
+	 imgs[i] = loadImage('../img/button11.png');
+  }
+}
+
+
+function setup() {
+  createCanvas(windowWidth, windowHeight, WEBGL);
+  angleMode(DEGREES);
+}
+
+function draw() {
+  background(0,0,0);
+  orbitControl();
+  push();
+  translate(0, 0, -500);
+  let n = 0;
+  for (let j = 0; j < 40; j++) {
+    for (let i = 0; i < 40; i++) {
+      //画面上にmapと順番を使ってx,y方向に並べる
+      let x = map(i, 0, 40, -500, 500);
+      let y = map(j, 0, 40, -500, 500);
+      //使用tile顺序使用sin函数摆动深度方向
+     // let z = sin(frameCount + j*10 + i * 10)*350+350;
+			// let z = sin(frameCount+ j*mouseX/100 + i * mouseY/100)*500+500;
+			let z = sin(frameCount)*500+500;
+
+
+      push();
+      translate(x, y, z);
+      texture(imgs[n]);
+      plane(50, 50);
+      n = (n + 1) % imgs.length;
+      pop();
+    }
+  }
+  pop();
+}
+
+    </script>
+
+
+  </body>
+</html>

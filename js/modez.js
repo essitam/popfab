@@ -52,6 +52,11 @@ function preload() {
   data17 = loadStrings('assets/newtxt/door.txt');
 }
 
+function loadme(){
+  document.querySelector('body').classList.add("loaded")
+}
+
+
 
 function setup() {
   let ccc = createCanvas(window.innerWidth, window.innerHeight);
@@ -113,6 +118,8 @@ function setup() {
     markov.loadText(data15.join(' '));
     markov.loadText(data16.join(' '));
     markov.loadText(data17.join(' '));
+    loadme();
+
   }
 
     function draw(){

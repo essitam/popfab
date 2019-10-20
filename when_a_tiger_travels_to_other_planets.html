@@ -21,12 +21,21 @@
 		<!--<script src="p5.collide2D-master/p5.collide2d.js"></script>-->
 		<script src="js/toggler.js"></script>
 		<script type="text/javascript" src="js/rita-full.min.js"></script>
-
+		<script type="text/javascript" src="js/preloader.js">	</script>
+		<link rel="stylesheet" href="css/preloader.css">
 		<!--random js-->
 		<script type="text/javascript" src="js/random.js"></script>
 		<link rel="stylesheet" href="css/fab.css" type="text/css" />
 
 <style>
+html,body{
+  cursor: url('img/button8.png'), auto;
+
+}
+
+a{
+	cursor:url('img/button9.png'), auto;
+}
 
 .hell{
 	color: blue;
@@ -56,10 +65,24 @@ button{
     width: 50%;
     overflow-y: scroll;
 }
+
 </style>
 	</head>
 	<body >
 		<script></script>
+
+		<div id="loader-wrapper">
+		  <div id="loader">
+		<img src="http://3e-pr0cess-s33dbank.com/thingies/chairshark.png"/>
+		</div>
+		  <div class="loader-section section-left"></div>
+		  <div class="loader-section section-right"></div>
+		</div>
+		<!--  Page Content goes here  -->
+		<div class="container">
+		  <h1>Spinner using CSS & JS</h1>
+
+
 		<div id="consolog" class="fixed-bottom con">
 					<div  id="suppy">
 					</div>
@@ -152,6 +175,6 @@ button{
       Manning, Erin. “What Things Do When They Shape Each Other” in
       <br><br>
     </div>
-
+</div>
   </body>
 </html>
