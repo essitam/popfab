@@ -4,6 +4,8 @@
 	<head>
 		<title></title>
 		 <meta charset="utf-8">
+		 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
 		 <!--bootstrap-->
 		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -26,15 +28,17 @@
 		<!--random js-->
 		<script type="text/javascript" src="js/random.js"></script>
 		<link rel="stylesheet" href="css/fab.css" type="text/css" />
+		<link rel="stylesheet" href="css/popdoc.css" type="text/css" />
+
 
 <style>
-html,body{
-  cursor: url('img/button8.png'), auto;
-
+html{
+  cursor: url('img/button16.png'), auto;
+	background-image: linear-gradient(red, yellow);
 }
 
 a{
-	cursor:url('img/button9.png'), auto;
+	cursor:url('img/button17.png'), auto;
 }
 
 .hell{
@@ -56,9 +60,10 @@ button{
 }
 .redredred{
   color: red;
-  position: absolute;
 }
 .scroll-box {
+	position: absolute;
+
     margin-left: 20%;
     border: 2px solid rgba(0, 0, 0, 0.1);
     height:100%;
@@ -73,37 +78,42 @@ button{
 
 		<div id="loader-wrapper">
 		  <div id="loader">
-		<img src="http://3e-pr0cess-s33dbank.com/thingies/chairshark.png"/>
+
 		</div>
 		  <div class="loader-section section-left"></div>
 		  <div class="loader-section section-right"></div>
 		</div>
 		<!--  Page Content goes here  -->
 		<div class="container">
-		  <h1>Spinner using CSS & JS</h1>
-
 
 		<div id="consolog" class="fixed-bottom con">
 					<div  id="suppy">
 					</div>
 					<div class="buttonz" id="buttonz">
-						<a href="vrey/index.html" target="_blank"> <img src="img/button13.png" class="mt-1 float-right"> </a>
-						<a href="vrey/index.html" target="_blank"> <img src="img/popfab.png" class="mt-1 float-right"> </a>
-						<a href="vrey/index.html" target="_blank"> <img src="img/button8.png" class="mt-1 float-right"> </a>
-						<a href="vrey/index.html" target="_blank"> <img src="img/button12.png" class="mt-1 float-right"> </a>
-						<a href="vrey/index.html" target="_blank"> <img src="img/button19.png" class="mt-1 float-right"> </a>
-						<a href="vrey/index.html" target="_blank"> <img src="img/button14.png" class="mt-1 float-right"> </a>
+						<!-- <a href="vrey/index.html" target="_blank"> <img src="img/button13.png" class="mt-1 float-right"> </a> -->
+						<a href="#" target="_blank"> <img src="img/popfab.png" class="mt-1 float-right"> </a>
+						<img src="img/button8.png" onclick="blackc('gradientt');pfing=null;">
+						<img src="img/button18.png" onclick="pfing=true;getElementById('gradientt').classList.toggle('hell');">
+						<img src="img/button15.png" onclick="pfing=false;getElementById('gradientt').classList.toggle('redredred');">
+						<img src="img/button16.png" onclick="cons();">
+						<img src="img/button10.png" onclick="blackc('gradientt', ['o']);">
+						<img src="img/button11.png" onclick="getElementById('gradientt').classList.remove('redredred','hell');getElementById('gradientt').classList.add('propo');getElementById('hellooo').style.display = "none;">
+						<!-- <img src="img/button11.png" onclick="getElementById('gradientt').classList.toggle('propo');">
+
+						<img src="img/button11.png" onclick="getElementById('gradientt').classList.toggle('propo');">
+
+						<img src="img/button11.png" onclick="getElementById('gradientt').classList.toggle('propo');">
+
+						<img src="img/button11.png" onclick="getElementById('gradientt').classList.toggle('propo');"> -->
+
 					</div>
 			</div>
-    <img src="img/button8.png" onclick="blackc('gradientt');">
-    <img src="img/button18.png" onclick="pfing=true;">
-    <img src="img/button15.png" onclick="pfing=false;">
-    <img src="img/button16.png" onclick="cons();">
+
 
 		<div id="hellooo">
 		</div>
-
- <div class="hell redredred scroll-box" id="gradientt">
+<div class="scroll-box">
+ <div id="gradientt">
       when a tiger travels to other planets…
       <br><br>
       Under what circumstances does a tiger pounce? What possesses this cat to swim? To eat a child? To climb a tree? Wait: is a tiger’s -esqueness sufficiently feline to inspire it to climb? To be determined. To be invented. When does a tiger travel to other planets? What makes a tiger fly? [..]. [The child playing tiger] departs from dynamic situations, extending the animal’s -esqueness beyond all known territory.
@@ -175,6 +185,7 @@ button{
       Manning, Erin. “What Things Do When They Shape Each Other” in
       <br><br>
     </div>
+	</div>
 </div>
   </body>
 </html>

@@ -55,7 +55,7 @@
 }
 
 .o {
-  color: #ffffff;
+  /* color: #ffffff; */
   letter-spacing:2px;
   -webkit-animation-name: grow; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 14s infinite alternate; /* Safari 4.0 - 8.0 */
@@ -107,4 +107,20 @@
 
 .z {
   color: #4b258d;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes grow {
+0% {font-size: 100px;}
+25% {font-size:20px;}
+50% {font-size:10px;}
+100% {font-size:20px;}
+}
+
+/* Standard syntax */
+@keyframes grow {
+0% {font-size: 100px;}
+25% {font-size: 20px;}
+50% {font-size: 10px;}
+100% {font-size: 20px;}
 }
