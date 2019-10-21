@@ -131,7 +131,7 @@ function buttonzz() {
   const iimg3 = document.createElement("IMG");
   iimg3.setAttribute("src", imgArray[2]);
   iimg3.addEventListener("click", function(){
-    toggle_visibility('hellooo');document.getElementById('gradientt').className = '';pfing=false;getElementById('gradientt').classList.toggle('redredred');
+    toggle_visibility('hellooo');document.getElementById('gradientt').className = ''; pfing=false; document.getElementById('gradientt').classList.toggle('redredred');
   }, true);
   para.appendChild(iimg3);
   const iimg4 = document.createElement("IMG");
