@@ -42,8 +42,9 @@
   left:12px;
   right:12px;
   bottom:12px;
-  border:3px solid transparent;
+  border:31px solid;
   /* border-top-color:orange; */
+  border-image: url(../img/button14.png);
   border-radius:100%;
   -webkit-animation: spin 1.5s linear infinite;
           animation: spin 1.5s linear infinite;

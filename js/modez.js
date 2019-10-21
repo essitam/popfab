@@ -66,14 +66,12 @@ function setup() {
   f = noise(100,256);
   xspeed= noise(2,5);
   yspeed= 5;
-  pickColor();
-  collideDebug(true);
-  slider = createSlider(0, 250, 60, 40);
-  slider.position(0, 0);
-  slider.style('width', '80px');
-  slider2 = createSlider(0, 250, 60, 40);
-  slider2.position(100, 10);
-  slider2.style('width', '80px');
+  // slider = createSlider(0, 250, 60, 40);
+  // slider.position(0, 0);
+  // slider.style('width', '80px');
+  // slider2 = createSlider(0, 250, 60, 40);
+  // slider2.position(100, 10);
+  // slider2.style('width', '80px');
   current = createVector(0,0);
   previous = createVector(0,0);
 
@@ -101,24 +99,27 @@ function setup() {
     datta17 = data17.join(' ');
 
     // load text into the model
-    markov.loadText(data1.join(' '));
-    markov.loadText(data2.join(' '));
-    markov.loadText(data3.join(' '));
-    markov.loadText(data4.join(' '));
-    markov.loadText(data5.join(' '));
-    markov.loadText(data6.join(' '));
-    markov.loadText(data7.join(' '));
-    markov.loadText(data8.join(' '));
-    markov.loadText(data9.join(' '));
-    markov.loadText(data10.join(' '));
-    markov.loadText(data11.join(' '));
-    markov.loadText(data12.join(' '));
-    markov.loadText(data13.join(' '));
-    markov.loadText(data14.join(' '));
-    markov.loadText(data15.join(' '));
-    markov.loadText(data16.join(' '));
-    markov.loadText(data17.join(' '));
+    markov.loadText(datta1);
+    markov.loadText(datta2);
+    markov.loadText(datta3);
+    markov.loadText(datta4);
+    markov.loadText(datta5);
+    markov.loadText(datta6);
+    markov.loadText(datta7);
+    markov.loadText(datta8);
+    markov.loadText(datta9);
+    markov.loadText(datta10);
+    markov.loadText(datta11);
+    markov.loadText(datta12);
+    markov.loadText(datta13);
+    markov.loadText(datta14);
+    markov.loadText(datta15);
+    markov.loadText(datta16);
+    markov.loadText(datta17);
     loadme();
+    buttonzz();
+    pickColor();
+    collideDebug(true);
 
   }
 

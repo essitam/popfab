@@ -34,8 +34,13 @@ function setup() {
 
   blend(img3, 0, 0, 33, 100, 67, 0, 33, 100, ADD);
 }
+const buttonzz = () => {
+	var para = document.createElement("P");                 // Create a <p> element
+	para.innerHTML = "This is a paragraph.";                // Insert text
+	document.getElementById("myDIV").appendChild(para);
+};
 
   </script>
-
+<div id="myDIV"></div>
 	</body>
 </html>
