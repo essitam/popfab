@@ -12,25 +12,18 @@ let button;
 let anotherStrata;
 let myfi;
 let datta1;
-
-
 function scrollToBottom(id){
    var div = document.getElementById(id);
    div.scrollTop = div.scrollHeight - div.clientHeight;
 }
-
 function cons() {
   xxx = 100;
   yyy = 220;
   lines = markov.generateSentences(3);
   // drawText();
-
-  // myF();
   matchymatchy();
 }
-
 const matchymatchy = () => {
-
 for (var x = 0; x < lines.length; x++) {
 
   var str1 = match(datta1, lines[x]);
