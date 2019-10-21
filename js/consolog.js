@@ -12,74 +12,6 @@ let button;
 let anotherStrata;
 let myfi;
 let datta1;
-//
-// function preload() {
-//   data1 = loadStrings('assets/newtxt/1.txt');
-//   data2 = loadStrings('assets/newtxt/alexis.txt');
-//   data3 = loadStrings('assets/newtxt/an_actual_occasion.txt');
-//   data4 = loadStrings('assets/newtxt/black_reason.txt');
-//   data5 = loadStrings('assets/newtxt/chris.txt');
-//   data6 = loadStrings('assets/newtxt/dreaming_abrahao.txt');
-//   data7 = loadStrings('assets/newtxt/essayperspectivism.txt');
-//   data8 = loadStrings('assets/newtxt/experimenting_immediation.txt');
-//   data9 = loadStrings('assets/newtxt/filho.txt');
-//   data10 = loadStrings('assets/newtxt/for_a_cinematic.txt');
-//   data11 = loadStrings('assets/newtxt/hijaked.txt');
-//   data12 = loadStrings('assets/newtxt/notes_on_space.txt');
-//   data13 = loadStrings('assets/newtxt/pfmf.txt');
-//   data14 = loadStrings('assets/newtxt/savage_marx.txt');
-//   data15 = loadStrings('assets/newtxt/tiger.txt');
-//   data16 = loadStrings('assets/newtxt/xapirimuu.txt');
-//   data17 = loadStrings('assets/newtxt/door.txt');
-// }
-
-//
-// function setit() {
-//
-//    lines = ["click to place your order!"];
-//
-//   // create a markov model w' n=4
-//   markov = new RiMarkov(8);
-//
-//   datta1 = data1.join(' ');
-//   datta2 = data2.join(' ');
-//   datta3 = data3.join(' ');
-//   datta4 = data4.join(' ');
-//   datta5 = data5.join(' ');
-//   datta6 = data6.join(' ');
-//   datta7 = data7.join(' ');
-//   datta8 = data8.join(' ');
-//   datta9 = data9.join(' ');
-//   datta10 = data10.join(' ');
-//   datta11 = data11.join(' ');
-//   datta12 = data12.join(' ');
-//   datta13 = data13.join(' ');
-//   datta14 = data14.join(' ');
-//   datta15 = data15.join(' ');
-//   datta16 = data16.join(' ');
-//   datta17 = data17.join(' ');
-//
-//   // load text into the model
-//   markov.loadText(data1.join(' '));
-//   markov.loadText(data2.join(' '));
-//   markov.loadText(data3.join(' '));
-//   markov.loadText(data4.join(' '));
-//   markov.loadText(data5.join(' '));
-//   markov.loadText(data6.join(' '));
-//   markov.loadText(data7.join(' '));
-//   markov.loadText(data8.join(' '));
-//   markov.loadText(data9.join(' '));
-//   markov.loadText(data10.join(' '));
-//   markov.loadText(data11.join(' '));
-//   markov.loadText(data12.join(' '));
-//   markov.loadText(data13.join(' '));
-//   markov.loadText(data14.join(' '));
-//   markov.loadText(data15.join(' '));
-//   markov.loadText(data16.join(' '));
-//   markov.loadText(data17.join(' '));
-//   drawText();
-//
-// }
 
 
 function scrollToBottom(id){
@@ -168,4 +100,64 @@ const matchymatchy = () => {
   list.appendChild(li);
   scrollToBottom("suppy");
   scrollToBottom("buttonz");
+};
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'none')
+      e.style.display = 'block';
+
+}
+
+function toggle_visibility2(id) {
+        var f = document.getElementById(id);
+        if(f.style.display == 'block')
+           f.style.display = 'none';
+         }
+function buttonzz() {
+  var imgArray = ["img/button8.png", "img/button18.png", "img/button15.png","img/button16.png", "img/button10.png", "img/button11.png", "img/button22.png" ];
+  const iimg = document.createElement("IMG");
+  iimg.setAttribute("src", imgArray[0]);
+  iimg.addEventListener("click", function(){
+    blackcat('gradientt');
+  }, true);
+  const para =  document.getElementById('buttonz');           // Insert text
+  para.appendChild(iimg);
+  const iimg2 = document.createElement("IMG");
+  iimg2.setAttribute("src", imgArray[1]);
+  iimg2.addEventListener("click", function(){
+    toggle_visibility('hellooo');document.getElementById('gradientt').className = '';pfing=true;getElementById('gradientt').classList.toggle('hell');
+  }, true);
+  para.appendChild(iimg2);
+  const iimg3 = document.createElement("IMG");
+  iimg3.setAttribute("src", imgArray[2]);
+  iimg3.addEventListener("click", function(){
+    toggle_visibility('hellooo');document.getElementById('gradientt').className = '';pfing=false;getElementById('gradientt').classList.toggle('redredred');
+  }, true);
+  para.appendChild(iimg3);
+  const iimg4 = document.createElement("IMG");
+  iimg4.setAttribute("src", imgArray[3]);
+  iimg4.addEventListener("click", function(){
+    cons();
+  }, true);
+  para.appendChild(iimg4);
+  const iimg5 = document.createElement("IMG");
+  iimg5.setAttribute("src", imgArray[4]);
+  iimg5.addEventListener("click", function(){
+    blackc('gradientt', ['o']);
+  }, true);
+  para.appendChild(iimg5);
+  const iimg6 = document.createElement("IMG");
+  iimg6.setAttribute("src", imgArray[5]);
+  iimg6.addEventListener("click", function(){
+    document.getElementById('gradientt').classList.add('propo');document.getElementById('hellooo').style.display = 'none';document.getElementById('scroll').classList.add('bgrnd');
+  }, true);
+  para.appendChild(iimg6);
+  const iimg7 = document.createElement("IMG");
+  iimg7.setAttribute("src", imgArray[6]);
+  iimg7.addEventListener("click", function(){
+    document.getElementById('hellooo').style.display = 'none';
+  }, true);
+  para.appendChild(iimg7);
+  para.classList.add('float-right');
+
 };
