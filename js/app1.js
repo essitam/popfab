@@ -152,23 +152,26 @@ function scrollToBottom(id){
 
 
 const matchymatchy = () => {
-  var str1 = match(datta1, lines);
-  var str2 = match(datta2, lines);
-  var str3 = match(datta3, lines);
-  var str4 = match(datta4, lines);
-  var str5 = match(datta5, lines);
-  var str6 = match(datta6, lines);
-  var str7 = match(datta7, lines);
-  var str8 = match(datta8, lines);
-  var str9 = match(datta9, lines);
-  var str10 = match(datta10, lines);
-  var str11 = match(datta11, lines);
-  var str12 = match(datta12, lines);
-  var str13 = match(datta13, lines);
-  var str14 = match(datta14, lines);
-  var str15 = match(datta15, lines);
-  var str16 = match(datta16, lines);
-  var str17 = match(datta17, lines);
+
+for (var x = 0; x < lines.length; x++) {
+
+  var str1 = match(datta1, lines[x]);
+  var str2 = match(datta2, lines[x]);
+  var str3 = match(datta3, lines[x]);
+  var str4 = match(datta4, lines[x]);
+  var str5 = match(datta5, lines[x]);
+  var str6 = match(datta6, lines[x]);
+  var str7 = match(datta7, lines[x]);
+  var str8 = match(datta8, lines[x]);
+  var str9 = match(datta9, lines[x]);
+  var str10 = match(datta10, lines[x]);
+  var str11 = match(datta11, lines[x]);
+  var str12 = match(datta12, lines[x]);
+  var str13 = match(datta13, lines[x]);
+  var str14 = match(datta14, lines[x]);
+  var str15 = match(datta15, lines[x]);
+  var str16 = match(datta16, lines[x]);
+  var str17 = match(datta17, lines[x]);
 
   let linky;
   let imgy;
@@ -216,13 +219,14 @@ const matchymatchy = () => {
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", imgy);
   anchor.href = linky;
-  anchor.innerText = lines;
+  anchor.innerText = lines[x];
   anchor.classList.add("fabfabfab");
   anchor.appendChild(iimg);
   li.appendChild(anchor);
   list.appendChild(li);
   scrollToBottom("suppy");
   scrollToBottom("buttonz");
+}
 };
 function theSound(){
     var mytimer = setInterval(function(){
@@ -242,7 +246,7 @@ function mouseClicked() {
   typed="";
   x = 100;
   y = 220;
-  lines = markov.generateSentences(1);
+  lines = markov.generateSentences(3);
   drawText();
   mySound.play();
   anotherStrata.clear();
