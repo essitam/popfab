@@ -114,6 +114,7 @@ function toggle_visibility2(id) {
            f.style.display = 'none';
          }
 function buttonzz() {
+  document.getElementById('gradientt').classList.add('hell');
   var imgArray = ["img/button8.png", "img/button18.png", "img/button15.png","img/button16.png", "img/button10.png", "img/button11.png", "img/button22.png" ];
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", imgArray[0]);
@@ -125,7 +126,7 @@ function buttonzz() {
   const iimg2 = document.createElement("IMG");
   iimg2.setAttribute("src", imgArray[1]);
   iimg2.addEventListener("click", function(){
-    toggle_visibility('hellooo');document.getElementById('gradientt').className = '';pfing=true;getElementById('gradientt').classList.toggle('hell');
+    toggle_visibility('hellooo');document.getElementById('gradientt').className = '';pfing=true;document.getElementById('gradientt').classList.toggle('hell');
   }, true);
   para.appendChild(iimg2);
   const iimg3 = document.createElement("IMG");
