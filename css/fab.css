@@ -1,0 +1,10 @@
+html{
+  cursor: url('../img/button16.png'), auto;
+  background: linear-gradient(red, orange);
+
+}
+body{
+  background: linear-gradient(red, orange);
+  font-family: arial black;
+  font-size: 13pt;
+}

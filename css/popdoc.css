@@ -1,13 +1,4 @@
-html{
-  cursor: url('../img/button16.png'), auto;
-  background: linear-gradient(red, orange);
 
-}
-body{
-  background: linear-gradient(red, orange);
-  font-family: arial black;
-  font-size: 13pt;
-}
 .bgrnd{
   background: linear-gradient(45deg, rgba(58,180,115,1) 0%, rgba(46,173,169,1) 25%, rgba(142,174,93,1) 42%, rgba(252,176,69,1) 59%, rgba(218,122,77,1) 77%, rgba(174,88,88,1) 100%);
   background-size: 400% 400%;
