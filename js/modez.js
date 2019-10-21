@@ -172,10 +172,10 @@ function setup() {
         }
         if (pfing===false){
           background('red');
-          var val = slider.value();
-          var vall = slider2.value();
-          c1 = color(val, 102, 0);
-          c2 = color(0, vall, 153);
+          // var val = slider.value();
+          // var vall = slider2.value();
+          c1 = color(100, 102, 0);
+          c2 = color(0, 100, 153);
           setGradient(mouseX, mouseY, 100 , 100, c1, c2, X_AXIS);
           ellipse(mouseX, mouseY, 150, 150);
 
