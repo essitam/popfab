@@ -90,7 +90,7 @@
   .redredred{
     color: red;
   }
-  .scroll-box {
+#scroll{
   	position: absolute;
 
       margin-left: 20%;

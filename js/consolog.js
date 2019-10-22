@@ -113,6 +113,7 @@ function toggle_visibility2(id) {
 function buttonzz() {
   document.getElementById('gradientt').classList.add('hell');
   var imgArray = ["img/button8.png", "img/button18.png", "img/button15.png","img/button16.png", "img/button10.png", "img/button11.png", "img/button22.png" ];
+  //blackcat
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", imgArray[0]);
   iimg.addEventListener("click", function(){
@@ -120,42 +121,55 @@ function buttonzz() {
   }, true);
   const para =  document.getElementById('buttonz');           // Insert text
   para.appendChild(iimg);
+  // blender
   const iimg2 = document.createElement("IMG");
   iimg2.setAttribute("src", imgArray[1]);
   iimg2.addEventListener("click", function(){
-    toggle_visibility('hellooo');document.getElementById('gradientt').className = '';pfing=true;document.getElementById('gradientt').classList.toggle('hell');
+    document.getElementById('scroll').className = '';
+    toggle_visibility('hellooo');
+    document.getElementById('gradientt').className = 'hell';
+    pfing=true;
   }, true);
   para.appendChild(iimg2);
+  //redredredpopopop
   const iimg3 = document.createElement("IMG");
   iimg3.setAttribute("src", imgArray[2]);
   iimg3.addEventListener("click", function(){
-    toggle_visibility('hellooo');document.getElementById('gradientt').className = ''; pfing=false; document.getElementById('gradientt').classList.toggle('redredred');
+    toggle_visibility('hellooo');
+    document.getElementById('scroll').className = '';
+    document.getElementById('gradientt').className = 'redredred';
+    pfing=false;
   }, true);
   para.appendChild(iimg3);
+  //menu
   const iimg4 = document.createElement("IMG");
   iimg4.setAttribute("src", imgArray[3]);
   iimg4.addEventListener("click", function(){
     cons();
   }, true);
   para.appendChild(iimg4);
+  //jumping o
   const iimg5 = document.createElement("IMG");
   iimg5.setAttribute("src", imgArray[4]);
   iimg5.addEventListener("click", function(){
     blackc('gradientt', ['o']);
   }, true);
+  //double gradient
   para.appendChild(iimg5);
   const iimg6 = document.createElement("IMG");
   iimg6.setAttribute("src", imgArray[5]);
   iimg6.addEventListener("click", function(){
-    document.getElementById('gradientt').classList.add('propo');document.getElementById('hellooo').style.display = 'none';document.getElementById('scroll').classList.add('bgrnd');
+    document.getElementById('gradientt').className = 'propo';
+    document.getElementById('hellooo').style.display = 'none';
+    document.getElementById('scroll').classList.add('bgrnd');
   }, true);
   para.appendChild(iimg6);
-  const iimg7 = document.createElement("IMG");
-  iimg7.setAttribute("src", imgArray[6]);
-  iimg7.addEventListener("click", function(){
-    document.getElementById('hellooo').style.display = 'none';
-  }, true);
-  para.appendChild(iimg7);
+  // const iimg7 = document.createElement("IMG");
+  // iimg7.setAttribute("src", imgArray[6]);
+  // iimg7.addEventListener("click", function(){
+  //   document.getElementById('hellooo').style.display = 'none';
+  // }, true);
+  // para.appendChild(iimg7);
   para.classList.add('float-right');
 
 };
