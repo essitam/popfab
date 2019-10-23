@@ -12,43 +12,41 @@ let button;
 let anotherStrata;
 let myfi;
 let datta1;
-
-
 function scrollToBottom(id){
    var div = document.getElementById(id);
    div.scrollTop = div.scrollHeight - div.clientHeight;
 }
-
 function cons() {
   xxx = 100;
   yyy = 220;
-  lines = markov.generateSentences(1);
+  lines = markov.generateSentences(3);
   // drawText();
-
-  // myF();
   matchymatchy();
 }
-
 const matchymatchy = () => {
-  var str1 = match(datta1, lines);
-  var str2 = match(datta2, lines);
-  var str3 = match(datta3, lines);
-  var str4 = match(datta4, lines);
-  var str5 = match(datta5, lines);
-  var str6 = match(datta6, lines);
-  var str7 = match(datta7, lines);
-  var str8 = match(datta8, lines);
-  var str9 = match(datta9, lines);
-  var str10 = match(datta10, lines);
-  var str11 = match(datta11, lines);
-  var str12 = match(datta12, lines);
-  var str13 = match(datta13, lines);
-  var str14 = match(datta14, lines);
-  var str15 = match(datta15, lines);
-  var str16 = match(datta16, lines);
-  var str17 = match(datta17, lines);
+for (var x = 0; x < lines.length; x++) {
+
+  var str1 = match(datta1, lines[x]);
+  var str2 = match(datta2, lines[x]);
+  var str3 = match(datta3, lines[x]);
+  var str4 = match(datta4, lines[x]);
+  var str5 = match(datta5, lines[x]);
+  var str6 = match(datta6, lines[x]);
+  var str7 = match(datta7, lines[x]);
+  var str8 = match(datta8, lines[x]);
+  var str9 = match(datta9, lines[x]);
+  var str10 = match(datta10, lines[x]);
+  var str11 = match(datta11, lines[x]);
+  var str12 = match(datta12, lines[x]);
+  var str13 = match(datta13, lines[x]);
+  var str14 = match(datta14, lines[x]);
+  var str15 = match(datta15, lines[x]);
+  var str16 = match(datta16, lines[x]);
+  var str17 = match(datta17, lines[x]);
+
   let linky;
   let imgy;
+
   str1 ? linky = "anarchival_cinema_and_the_powers_of_the_false.html": null;
   str2 ? linky = "in_between_hunger_and_appetite.html": null;
   str3 ? linky = "epistolary_romantics.html": null;
@@ -67,7 +65,6 @@ const matchymatchy = () => {
   str16 ? linky = "xapirimuu": null;
   str17 ? linky = "passages.html": null;
 
-
   str1 ? imgy = "img/button9.png": null;
   str2 ? imgy = "img/button10.png": null;
   str3 ? imgy = "img/button11.png": null;
@@ -84,7 +81,7 @@ const matchymatchy = () => {
   str14 ? imgy = "img/button22.png": null;
   str15 ? imgy = "img/button2.png": null;
   str16 ? imgy = "img/button3.png": null;
-  str17 ? imgy = "img/button9.png": null;
+  str17 ? imgy = "img/button3.png": null;
 
 
   const anchor = document.createElement('a');
@@ -93,13 +90,14 @@ const matchymatchy = () => {
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", imgy);
   anchor.href = linky;
-  anchor.innerText = lines;
+  anchor.innerText = lines[x];
   anchor.classList.add("fabfabfab");
   anchor.appendChild(iimg);
   li.appendChild(anchor);
   list.appendChild(li);
   scrollToBottom("suppy");
   scrollToBottom("buttonz");
+}
 };
 function toggle_visibility(id) {
    var e = document.getElementById(id);
@@ -107,7 +105,6 @@ function toggle_visibility(id) {
       e.style.display = 'block';
 
 }
-
 function toggle_visibility2(id) {
         var f = document.getElementById(id);
         if(f.style.display == 'block')
@@ -116,6 +113,7 @@ function toggle_visibility2(id) {
 function buttonzz() {
   document.getElementById('gradientt').classList.add('hell');
   var imgArray = ["img/button8.png", "img/button18.png", "img/button15.png","img/button16.png", "img/button10.png", "img/button11.png", "img/button22.png" ];
+  //blackcat
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", imgArray[0]);
   iimg.addEventListener("click", function(){
@@ -123,42 +121,55 @@ function buttonzz() {
   }, true);
   const para =  document.getElementById('buttonz');           // Insert text
   para.appendChild(iimg);
+  // blender
   const iimg2 = document.createElement("IMG");
   iimg2.setAttribute("src", imgArray[1]);
   iimg2.addEventListener("click", function(){
-    toggle_visibility('hellooo');document.getElementById('gradientt').className = '';pfing=true;document.getElementById('gradientt').classList.toggle('hell');
+    document.getElementById('scroll').className = '';
+    toggle_visibility('hellooo');
+    document.getElementById('gradientt').className = 'hell';
+    pfing=true;
   }, true);
   para.appendChild(iimg2);
+  //redredredpopopop
   const iimg3 = document.createElement("IMG");
   iimg3.setAttribute("src", imgArray[2]);
   iimg3.addEventListener("click", function(){
-    toggle_visibility('hellooo');document.getElementById('gradientt').className = ''; pfing=false; document.getElementById('gradientt').classList.toggle('redredred');
+    toggle_visibility('hellooo');
+    document.getElementById('scroll').className = '';
+    document.getElementById('gradientt').className = 'redredred';
+    pfing=false;
   }, true);
   para.appendChild(iimg3);
+  //menu
   const iimg4 = document.createElement("IMG");
   iimg4.setAttribute("src", imgArray[3]);
   iimg4.addEventListener("click", function(){
     cons();
   }, true);
   para.appendChild(iimg4);
+  //jumping o
   const iimg5 = document.createElement("IMG");
   iimg5.setAttribute("src", imgArray[4]);
   iimg5.addEventListener("click", function(){
     blackc('gradientt', ['o']);
   }, true);
+  //double gradient
   para.appendChild(iimg5);
   const iimg6 = document.createElement("IMG");
   iimg6.setAttribute("src", imgArray[5]);
   iimg6.addEventListener("click", function(){
-    document.getElementById('gradientt').classList.add('propo');document.getElementById('hellooo').style.display = 'none';document.getElementById('scroll').classList.add('bgrnd');
+    document.getElementById('gradientt').className = 'propo';
+    document.getElementById('hellooo').style.display = 'none';
+    document.getElementById('scroll').classList.add('bgrnd');
   }, true);
   para.appendChild(iimg6);
-  const iimg7 = document.createElement("IMG");
-  iimg7.setAttribute("src", imgArray[6]);
-  iimg7.addEventListener("click", function(){
-    document.getElementById('hellooo').style.display = 'none';
-  }, true);
-  para.appendChild(iimg7);
+  // const iimg7 = document.createElement("IMG");
+  // iimg7.setAttribute("src", imgArray[6]);
+  // iimg7.addEventListener("click", function(){
+  //   document.getElementById('hellooo').style.display = 'none';
+  // }, true);
+  // para.appendChild(iimg7);
   para.classList.add('float-right');
 
 };
