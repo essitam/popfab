@@ -21,7 +21,7 @@ let next = 0;
 // Where are we now and where were we?
 let current;
 let previous;
-var pfing=true;
+var pfing=null;
 
 function pickColor() {
   r = random(150, 256);

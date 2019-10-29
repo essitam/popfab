@@ -117,7 +117,7 @@ function buttonzz() {
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", imgArray[0]);
   iimg.addEventListener("click", function(){
-    blackcat('gradientt');
+    blackcat("p");
   }, true);
   const para =  document.getElementById('buttonz');           // Insert text
   para.appendChild(iimg);
@@ -152,7 +152,7 @@ function buttonzz() {
   const iimg5 = document.createElement("IMG");
   iimg5.setAttribute("src", imgArray[4]);
   iimg5.addEventListener("click", function(){
-    blackc('gradientt', ['o']);
+    blackc(['o']);
   }, true);
   //double gradient
   para.appendChild(iimg5);
