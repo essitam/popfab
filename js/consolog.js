@@ -111,7 +111,10 @@ function toggle_visibility2(id) {
            f.style.display = 'none';
          }
 function buttonzz() {
-  document.getElementById('gradientt').classList.add('hell');
+  document.getElementById('gradientt').className = 'propo';
+  document.getElementById('hellooo').style.display = 'none';
+  document.getElementById('scroll').classList.add('bgrnd');
+
   var imgArray = ["img/button8.png", "img/button18.png", "img/button15.png","img/button16.png", "img/button10.png", "img/button11.png", "img/button22.png" ];
   //blackcat
   const iimg = document.createElement("IMG");
