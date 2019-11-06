@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script type="text/javascript" src="js/p5.play.js"></script>
+    <script src="js/p5.collide2d.min.js"></script>
+    <script type="text/javascript" src="js/p5.dom.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var text = 'Replace every time the word "the" appears with the word ze. url(\'saffafs.png\')';
+
+// \b is a word boundary
+// You can think of this as an invisible boundary
+// between a non-word character and a word character.
+
+var regex = /\burl\b\(([^)]+)\)/;
+var results=text.match(regex);
+var replaced = text.replace(regex,results);
+console.log(replaced);
+// // function removeUrl(s) {
+//    s = s.replace(/url\("/, '');
+//    s = s.replace(/"\)/, '');
+//    console.log(s)
+//    return s
+
+    </script>
+var regex = //burl/b\(([^])\) /
+
+
+  </body>
+</html>

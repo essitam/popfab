@@ -11,8 +11,8 @@
   position: relative;
   top:50%;
   left:50%;
-  width:150px;
-  height:150px;
+   width:200px;
+  height:200px;
   margin:-75px 0 0 -75px;
   /* border:3px solid transparent; */
   /* border-top-color:white; */
@@ -30,10 +30,13 @@
   bottom:5px;
   border:3px solid transparent;
   /* border-top-color: yellow; */
-  background-image: url(../img/button16.png);
+  /* background-image: url(../img/button16.png); */
+  background-image: url('http://3e-pr0cess-s33dbank.com/thingies/thingyyyypurpllle.png');
+  background-size: contain;
+  background: contain;
   border-radius:100%;
-  -webkit-animation: spin 3s linear infinite;
-          animation: spin 3s linear infinite;
+  -webkit-animation: spin 1111s linear infinite;
+          animation: spin 1111s linear infinite;
 }
 #loader:after {
   content:"";
@@ -42,12 +45,12 @@
   left:12px;
   right:12px;
   bottom:12px;
-  border:31px solid;
+  /* border:31px solid; */
   /* border-top-color:orange; */
-  border-image: url(../img/button14.png);
+  /* border-image: url(../img/button14.png); */
   border-radius:100%;
-  -webkit-animation: spin 1.5s linear infinite;
-          animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 20.5s linear infinite;
+          animation: spin 20.5s linear infinite;
 }
 @-webkit-keyframes spin {
   0%   {
@@ -74,6 +77,7 @@
   position:fixed;
   top:0;
   background-image: url('../img/button19.png');
+  /* background-image: url('../img/button16.png'); */
   width:51%;
   height:100%;
   z-index:1000;
