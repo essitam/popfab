@@ -10,7 +10,7 @@
   width: 50%;
   margin-left: 20%;
   font-family: Arial Black, sans-serif;
-  font-size: 42pt;
+  font-size: 22pt;
   font-weight:  100;
   letter-spacing: 2px;
   padding: 10px;
@@ -91,11 +91,37 @@
     color: red;
   }
 #scroll{
-  	position: absolute;
-
+  	  position: absolute;
       margin-left: 20%;
       border: 2px solid rgba(0, 0, 0, 0.1);
       height:100%;
       width: 50%;
       overflow-y: scroll;
   }
+  #suppy{
+    width: 50%;
+  }
+.indent{
+  margin-left: 5%;
+}
+.title{
+  text-align:right;
+  margin: 5px;
+  width:211px;
+  height:211px;
+  /* position:absolute; */
+  /* background-image: url('img/button11.png'); */
+  /* background-image: linear-gradient(to right, red, blue); */
+  color: red;
+  transform: rotate(90deg);
+
+
+}
+.blendit{
+  margin-left:auto;
+  margin-right:auto;
+  mix-blend-mode: exclusion;
+}
+.sub{
+  font-size: 12px;
+}
