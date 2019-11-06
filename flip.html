@@ -14,7 +14,7 @@
 
 	</head>
 	<body>
-<script>
+<!-- <script>
   let img0;
 let img1;
 // let string = "hellocreature";
@@ -40,7 +40,149 @@ const buttonzz = () => {
 	document.getElementById("myDIV").appendChild(para);
 };
 
-  </script>
+  </script> -->
+	<script type="text/javascript">
+	//Dynamically drawn sprites
+//sprite with a custom drawing function follows the mouse
+//and changes shape according to its speed
+
+var stretchy;
+var face;
+
+function setup() {
+createCanvas(800, 400);
+
+face = loadImage('assets/face.png');
+
+//Sometimes image sequences are not enough and you may want to
+//use p5's drawing function while retaining the built-in features of the
+//sprite class
+stretchy = createSprite(400, 200, 10, 10);
+
+//To do so you can override (overwrite) the draw() function of the sprite
+//and make it display anything you want in its current position.
+//In javascript function and methods can be assigned like variables
+
+stretchy.draw = function() {
+
+	//the center of the sprite will be point 0,0
+	//"this" in this function will reference the sprite itself
+	fill(237, 205, 0);
+
+	//make the ellipse stretch in the sprite direction
+	//proportionally to its speed
+	push();
+	rotate(radians(this.getDirection()));
+	ellipse(0, 0, 100+this.getSpeed(), 100-this.getSpeed());
+	fill('blue')
+	text('11 or infinite', this.getSpeed(), this.getSpeed());
+	pop();
+
+	//this.deltaX and this.deltaY are the position increment
+	//since the last frame, move the face image toward the direction
+	image(face, this.deltaX*2, this.deltaY*2);
+};
+
+stretchy.maxSpeed = 10;
+}
+
+function draw() {
+background(255, 255, 255);
+
+//mouse trailer, the speed is inversely proportional to the mouse distance
+stretchy.velocity.x = (mouseX-stretchy.position.x)/10;
+stretchy.velocity.y = (mouseY-stretchy.position.y)/10;
+
+drawSprites();
+}
+	</script>
+	<!-- <script type="text/javascript">
+			//Collision detection - Bouncing behavior
+
+			var circles;
+			var boxes;
+
+			function setup() {
+			  createCanvas(windowWidth, windowHeight);
+
+			  circles = new Group();
+
+			  for(var i=0; i<20; i++)
+			  {
+			    var circle = createSprite(random(0, width), random(0, height));
+			    circle.addAnimation('normal', 'thingies/thingyyyypurpllle.png');
+			    circle.setCollider('circle', -2, 2, 55);
+			    circle.setSpeed(random(2, 3), random(0, 360));
+
+			    //scale affects the size of the collider
+			    circle.scale = random(0.5, 1);
+			    //mass determines the force exchange in case of bounce
+			    circle.mass = circle.scale;
+			    //restitution is the dispersion of energy at each bounce
+			    //if = 1 the circles will bounce forever
+			    //if < 1 the circles will slow down
+			    //if > 1 the circles will accelerate until they glitch
+			    //circle.restitution = 0.9;
+			    circles.add(circle);
+			  }
+
+			  boxes = new Group();
+
+			  for(var j=0; j<4; j++)
+			  {
+			    var box = createSprite(random(0, width), random(0, height));
+			    box.addAnimation('normal', 'thingies/compost.png');
+			    //setting immovable to true makes the sprite immune to bouncing and displacements
+			    //as if with infinite mass
+			    box.immovable = true;
+
+			    //rotation rotates the collider too but it will always be an axis oriented
+			    //bounding box, that is an ortogonal rectangle
+			    if(j%2==0)
+			      box.rotation = 90;
+			    boxes.add(box);
+			  }
+			}
+
+
+
+			function draw() {
+			  // background(255, 255, 255);
+		background('blue');
+			  //circles bounce against each others and against boxes
+			  circles.bounce(circles);
+			  //boxes are "immovable"
+			  circles.bounce(boxes);
+			  //all sprites bounce at the screen edges
+			  for(var i=0; i<allSprites.length; i++) {
+			    var s = allSprites[i];
+			    if(s.position.x<0) {
+			      s.position.x = 1;
+			      s.velocity.x = abs(s.velocity.x);
+			    }
+
+			    if(s.position.x>width) {
+			      s.position.x = width-1;
+			      s.velocity.x = -abs(s.velocity.x);
+			    }
+
+			    if(s.position.y<0) {
+			      s.position.y = 1;
+			      s.velocity.y = abs(s.velocity.y);
+			    }
+
+			    if(s.position.y>height) {
+			      s.position.y = height-1;
+			      s.velocity.y = -abs(s.velocity.y);
+			    }
+			  }
+
+			  drawSprites();
+
+			}
+
+			</script> -->
+
 <div id="myDIV"></div>
 	</body>
 </html>
