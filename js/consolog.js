@@ -125,7 +125,7 @@ function buttonzz() {
     document.getElementById('scroll').className = '';
     toggle_visibility('hellooo');
     document.getElementById('gradientt').className = 'hell';
-    pfing=true;
+    pfing=3;
   }, true);
   para.appendChild(iimg2);
   //redredredpopopop
@@ -135,7 +135,7 @@ function buttonzz() {
     toggle_visibility('hellooo');
     document.getElementById('scroll').className = '';
     document.getElementById('gradientt').className = 'redredred';
-    pfing=false;
+    pfing=1;
   }, true);
   para.appendChild(iimg3);
   //menu

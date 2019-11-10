@@ -1,0 +1,25 @@
+I looked into all possible combinations of V-R-E-Y: 
+VREY
+RVEY
+EVRY
+VERY
+REVY
+ERVY
+YRVE
+RYVE
+VYRE
+YVRE
+RVYE
+VRYE
+VEYR
+EVYR
+YVER
+VYER
+EYVR
+YEVR
+YERV
+EYRV
+RYEV
+YREV
+ERYV
+REYV
