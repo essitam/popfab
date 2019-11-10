@@ -12,25 +12,26 @@ var ellipsecolor = 44;
 var timer = 10;
 var nextTime = timer;
 let button;
-
+var txtArray;
 
 function preload() {
+txtArray = ["vrey_txt/vrey_pop_up/vrey_politics.txtd","vrey_txt/vrey_pop_up/vrey_500flowers.txt	","vrey_txt/vrey_pop_up/vrey_a<anda3.txt	","vrey_txt/vrey_pop_up/vrey_abody.txt	","vrey_txt/vrey_pop_up/vrey_alce.txt	","vrey_txt/vrey_pop_up/vrey_asleep.txt	","vrey_txt/vrey_pop_up/vrey_bagsindryer.txt	","vrey_txt/vrey_pop_up/vrey_biking.txt	","vrey_txt/vrey_pop_up/vrey_birds.txt	","vrey_txt/vrey_pop_up/vrey_björk.txt	","vrey_txt/vrey_pop_up/vrey_bobcat.txt	","vrey_txt/vrey_pop_up/vrey_bodiesofwater.txt	","vrey_txt/vrey_pop_up/vrey_boots.txt	","vrey_txt/vrey_pop_up/vrey_cardamom.txt	","vrey_txt/vrey_pop_up/vrey_chairs.txt	","vrey_txt/vrey_pop_up/vrey_chinotto.txt	","vrey_txt/vrey_pop_up/vrey_cloggedpores.txt	","vrey_txt/vrey_pop_up/vrey_continuum.txt	","vrey_txt/vrey_pop_up/vrey_conversationsofafuturepast.txt	","vrey_txt/vrey_pop_up/vrey_derrida.txt	","vrey_txt/vrey_pop_up/vrey_dogcafe.txt	","vrey_txt/vrey_pop_up/vrey_dougie.txt	","vrey_txt/vrey_pop_up/vrey_expanding.txt	","vrey_txt/vrey_pop_up/vrey_faces.txt	","vrey_txt/vrey_pop_up/vrey_fall.txt	","vrey_txt/vrey_pop_up/vrey_fanfiction.txt	","vrey_txt/vrey_pop_up/vrey_feetlylullaby.txt	","vrey_txt/vrey_pop_up/vrey_flcl.txt	","vrey_txt/vrey_pop_up/vrey_footdoctor.txt	","vrey_txt/vrey_pop_up/vrey_furniture.txt	","vrey_txt/vrey_pop_up/vrey_futurepast.txt	","vrey_txt/vrey_pop_up/vrey_gloriousbody.txt	","vrey_txt/vrey_pop_up/vrey_happeningagain.txt	","vrey_txt/vrey_pop_up/vrey_heavystone.txt	","vrey_txt/vrey_pop_up/vrey_interface.txt	","vrey_txt/vrey_pop_up/vrey_laundroworld.txt	","vrey_txt/vrey_pop_up/vrey_livingroom.txt	","vrey_txt/vrey_pop_up/vrey_lottery.txt	","vrey_txt/vrey_pop_up/vrey_mornings.txt	","vrey_txt/vrey_pop_up/vrey_moten.txt	","vrey_txt/vrey_pop_up/vrey_multiversework.txt	","vrey_txt/vrey_pop_up/vrey_notes.txt	","vrey_txt/vrey_pop_up/vrey_octopodalmode.txt	","vrey_txt/vrey_pop_up/vrey_oldfriend.txt	","vrey_txt/vrey_pop_up/vrey_oops.txt	","vrey_txt/vrey_pop_up/vrey_oranges.txt	","vrey_txt/vrey_pop_up/vrey_pacing.txt	","vrey_txt/vrey_pop_up/vrey_padthai.txt	","vrey_txt/vrey_pop_up/vrey_pebbles.txt	","vrey_txt/vrey_pop_up/vrey_popopsong.txt	","vrey_txt/vrey_pop_up/vrey_popsong.txt	","vrey_txt/vrey_pop_up/vrey_recognizing.txt	","vrey_txt/vrey_pop_up/vrey_repetition.txt	","vrey_txt/vrey_pop_up/vrey_rerolling.txt	","vrey_txt/vrey_pop_up/vrey_restaurants.txt	","vrey_txt/vrey_pop_up/vrey_riget.txt	","vrey_txt/vrey_pop_up/vrey_seriesofsqueaks.txt	","vrey_txt/vrey_pop_up/vrey_smoothoperators.txt	","vrey_txt/vrey_pop_up/vrey_socks.txt	","vrey_txt/vrey_pop_up/vrey_songpop.txt	","vrey_txt/vrey_pop_up/vrey_spectreconfetti.txt	","vrey_txt/vrey_pop_up/vrey_spinach.txt	","vrey_txt/vrey_pop_up/vrey_splash.txt	","vrey_txt/vrey_pop_up/vrey_stones.txt	","vrey_txt/vrey_pop_up/vrey_sweeping.txt	","vrey_txt/vrey_pop_up/vrey_swimming.txt	","vrey_txt/vrey_pop_up/vrey_thingies.txt	","vrey_txt/vrey_pop_up/vrey_timemachine.txt	","vrey_txt/vrey_pop_up/vrey_tinygigi.txt	","vrey_txt/vrey_pop_up/vrey_togetherness.txt	","vrey_txt/vrey_pop_up/vrey_turningpoint.txt	","vrey_txt/vrey_pop_up/vrey_twostripes.txt	","vrey_txt/vrey_pop_up/vrey_underconstruction.txt	","vrey_txt/vrey_pop_up/vrey_v-e-r-y.txt	","vrey_txt/vrey_pop_up/vrey_variations.txt	","vrey_txt/vrey_pop_up/vrey_watertower.txt	","vrey_txt/vrey_pop_up/vrey_writingtyping.txt	","vrey_txt/vrey_pop_up/vrey_xfiles.txt	","vrey_txt/vrey_pop_up/vrey_xfilesagain.txt	", "vrey_txt/vrey_pop_up/vrey_xrayghosts.txt	"];
 
-  data1 = loadStrings('vreytext/vrey_1.txt');
-  data2 = loadStrings('vreytext/vrey_2.txt');
-  data3 = loadStrings('vreytext/vrey_3.txt');
-  data4 = loadStrings('vreytext/vrey_4.txt');
-  data5 = loadStrings('vreytext/vrey_5.txt');
-  data6 = loadStrings('vreytext/vrey_6.txt');
-  data7 = loadStrings('vreytext/vrey_7.txt');
-  data8 = loadStrings('vreytext/vrey_8.txt');
-  data9 = loadStrings('vreytext/vrey_9.txt');
-  data10 = loadStrings('vreytext/vrey_10.txt');
-  data11 = loadStrings('vreytext/vrey_11.txt');
-  data12 = loadStrings('vreytext/vrey_12.txt');
-  data13 = loadStrings('vreytext/vrey_13.txt');
-  data14 = loadStrings('vreytext/vrey_14.txt');
-  data15 = loadStrings('vreytext/vrey_15.txt');
+  data1 = loadStrings(random(txtArray));
+  // data2 = loadStrings('vreytext/vrey_2.txt');
+  // data3 = loadStrings('vreytext/vrey_3.txt');
+  // data4 = loadStrings('vreytext/vrey_4.txt');
+  // data5 = loadStrings('vreytext/vrey_5.txt');
+  // data6 = loadStrings('vreytext/vrey_6.txt');
+  // data7 = loadStrings('vreytext/vrey_7.txt');
+  // data8 = loadStrings('vreytext/vrey_8.txt');
+  // data9 = loadStrings('vreytext/vrey_9.txt');
+  // data10 = loadStrings('vreytext/vrey_10.txt');
+  // data11 = loadStrings('vreytext/vrey_11.txt');
+  // data12 = loadStrings('vreytext/vrey_12.txt');
+  // data13 = loadStrings('vreytext/vrey_13.txt');
+  // data14 = loadStrings('vreytext/vrey_14.txt');
+  // data15 = loadStrings('vreytext/vrey_15.txt');
   mySound = loadSound('../assets/bell.mp3');
   img[0] = loadImage("img/img0.png");
   img[1] =  loadImage("img/img1.png");
@@ -43,47 +44,47 @@ function setup() {
   let createcanvas = createCanvas(window.innerWidth /2 , window.innerHeight);
   createcanvas.parent('#text');
   // mobilenet = ml5.imageClassifier('MobileNet', modelReady);
-  bg = loadImage("background.jpg");
-  textFont('avenir');
-  textSize(20 + (mouseX / width)*72);
-  // image(img[index], 200, 200, 100, 200);
-  // textAlign(LEFT);
-  frameRate(30);
-
-   fill('beige');
-   lines = ["click to place your order!"];
-    
-  // create a markov model w' n=4
-  markov = new RiMarkov(8);
+  // bg = loadImage("background.jpg");
+  // textFont('avenir');
+  // textSize(20 + (mouseX / width)*72);
+  // // image(img[index], 200, 200, 100, 200);
+  // // textAlign(LEFT);
+  // frameRate(30);
+  //
+  //  fill('beige');
+  //  lines = ["click to place your order!"];
+  //
+  // // create a markov model w' n=4
+  // markov = new RiMarkov(8);
 
   // load text into the model
-  markov.loadText(data1.join(' '));
-  markov.loadText(data2.join(' '));
-  markov.loadText(data3.join(' '));
-  markov.loadText(data4.join(' '));
-  markov.loadText(data5.join(' '));
-  markov.loadText(data6.join(' '));
-  markov.loadText(data7.join(' '));
-  markov.loadText(data8.join(' '));
-  markov.loadText(data9.join(' '));
-  markov.loadText(data10.join(' '));
-  markov.loadText(data11.join(' '));
-  markov.loadText(data12.join(' '));
-  markov.loadText(data13.join(' '));
-  markov.loadText(data14.join(' '));
-  markov.loadText(data15.join(' '));
-  drawText();
+  // markov.loadText(data1.join(' '));
+  // markov.loadText(data2.join(' '));
+  // markov.loadText(data3.join(' '));
+  // markov.loadText(data4.join(' '));
+  // markov.loadText(data5.join(' '));
+  // markov.loadText(data6.join(' '));
+  // markov.loadText(data7.join(' '));
+  // markov.loadText(data8.join(' '));
+  // markov.loadText(data9.join(' '));
+  // markov.loadText(data10.join(' '));
+  // markov.loadText(data11.join(' '));
+  // markov.loadText(data12.join(' '));
+  // markov.loadText(data13.join(' '));
+  // markov.loadText(data14.join(' '));
+  // markov.loadText(data15.join(' '));
+  // drawText();
   // var firstPDF = createA('pdfs/humanbutnonhuman.pdf', 'They are not human but they are not non-human', 1000, 700);
   // firstPDF.class("btn btn-dark rounded float-top");
   // var secondPDF = createA('pdfs/anarchivalcinema.pdf', 'Anarchival Cinema', 1000, 700);
   // secondPDF.class("btn btn-dark rounded ml-1 float-right");
-            
-            
+
+
                     //   button = createButton('submit');
                     //     button.position(100 + 200, 65);
                     //     button.mousePressed(speak);
                     //     button.parent('notice');
- 
+
 }
 
 function windowResized() {
@@ -100,14 +101,14 @@ function ellipsee(){
 }
 
 function draw(){
-  
+
   line(mouseX, mouseY, pmouseX, pmouseY);
   print(pmouseX + ' -> ' + mouseX);
   translate (mouseX, mouseY);
   fill(ellipsecolor);
   var value = random(0, 600);
   ellipse(mouseX, mouseY, 0.4, 0.4);
-  
+
 }
 
 
@@ -115,20 +116,19 @@ function drawText() {
 
   clear();
 //   background(bg);
-  textSize(20 + (mouseX / width)*33);
-  stroke('#222222');
-    strokeWeight(2.5);
-    fill('yellow')
-  text(lines.join(' '), 0, 50, 500, 600);
+  var rVrey=data1.join(' ');
+  var vreyvrey = document.getElementById('text');
+  vreyvrey.innerText = rVrey;
+  data1 = loadStrings(random(txtArray));
   // text('PDF1', 1000, 700);
   // text('PDF2', 1080, 700);
-  
+
 }
 
 // function theSound(){
-    
+
 //     var mytimer = setInterval(function(){
-      
+
 //       var voices = speechSynthesis.getVoices();
 //     if (voices.length !=0){
 //             var msg = new SpeechSynthesisUtterance(lines.join(' '), 50, 201, 400, 530);
@@ -140,45 +140,53 @@ function drawText() {
 //           counter++
 //         }  }, 1000)
 //          window.speechSynthesis.cancel();
-       
+
 // }
 
 
 
-function mouseClicked() {
+// function mouseClicked() {
+//
+//   typed="";
+//   x = 100;
+//   y = 220;
+//   lines = markov.generateSentences(10);
+//   drawText();
+//
+//
+//
+// }
 
-  typed="";
-  x = 100;
-  y = 220;
-  lines = markov.generateSentences(10);
-  drawText();
-  
- 
-  
-}
-
-function keyTyped(){
-  if (keyCode != RETURN) typed += key;
-  push(); // push and pop create a bubble: when pop () is activated, the state of things gets back to push(); although this was of no use
-  translate (mouseX, mouseY)
-  text(typed, 0, 0); // Draw at coordinate 
-  pop();
-}
+// function keyTyped(){
+//   if (keyCode != RETURN) typed += key;
+//   push(); // push and pop create a bubble: when pop () is activated, the state of things gets back to push(); although this was of no use
+//   translate (mouseX, mouseY)
+//   text(typed, 0, 0); // Draw at coordinate
+//   pop();
+// }
 
 
 function mouseReleased(){
            index = index + 1;
           if (index == img.length){
               index = index - img.length;
-             
+
     }
-     
+
 }
 
+// function chooseParagraph(){
+//   var randomVrey = loadStrings(random(txtArray));
+//   console.log(randomVrey);
+//   var rVrey= randomVrey.join(' ');
+//   text(rVrey, 100, 100);
+//   var vreytxt = createDiv(rVrey);
+//   vreytxt.position(100,100);
+// }
 
 var imgArr = ["catsquirrel.gif", "death.jpg", "derridacat.jpg", "flowers.png", "image4.jpg", "image6.png", "image9.jpg", "image11.jpg", "image12.jpg",
 "image14.jpg", "image15.jpg", "image16.jpg", "image17.png", "image18.jpg", "image19.png", "image20.jpg", "image21.jpg", "image22.png", "image23.png",
-"image24.jpg", "image25.jpg", "image27.jpg", "image28.png", "image30.jpg", "image31.png", "image32.jpg", "image33.jpg", "image35.jpg", "image36.jpg", 
+"image24.jpg", "image25.jpg", "image27.jpg", "image28.png", "image30.jpg", "image31.png", "image32.jpg", "image33.jpg", "image35.jpg", "image36.jpg",
 "image37.jpg", "image38.jpg", "image38.png", "image39.png", "image40.jpg", "laundromat.jpg", "laundryindenmark.jpg", "metering_low.gif", "naughty.png",
 "nighttrain.jpg", "pxl2000.gif", "raccoon.jpg", "tape.gif", "typewriter.jpg", "vrumvrum.png", "yellow_thingie.png", "laundroverse.jpg", "image41.jpg"]
 
@@ -203,4 +211,3 @@ function choosePic() {
     document.getElementById('headerAnimation').style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover"
 }
-

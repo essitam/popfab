@@ -22,6 +22,7 @@ let next = 0;
 let current;
 let previous;
 var pfing=null;
+var p=0;
 
 function pickColor() {
   r = random(150, 256);
@@ -125,7 +126,7 @@ function setup() {
 
     function draw(){
 
-      if (pfing === true){
+      if (pfing === 2){
         background ('yellow');
 
         noStroke();
@@ -170,7 +171,16 @@ function setup() {
             pickColor();
           }
         }
-        if (pfing===false){
+      if (pfing===0){
+        background(0,100,30);
+        blendMode(EXCLUSION);
+        fill(255);
+        noStroke();
+        rect(100, 100, 1000,100);
+        rect(150,150,150,150);
+        ellipse(mouseX,mouseY,45,45);
+      }
+        if (pfing===1){
           background('red');
           // var val = slider.value();
           // var vall = slider2.value();
@@ -207,9 +217,94 @@ function setup() {
             paths[i].display();
           }
         }
+        if (pfing===3){
+          background (r, 215, 20);
+          //text(p1, 100, 100);
+          blendMode(DIFFERENCE);
+        //  p1 (600,600);
+        //  rect(x, y, 80, 60);
+        //Draw the DVD logo
+        //tint(r,g,b);
+        //  image(dvd, x, y);
+          //rect (100,100,100,100);
+        /*  if (mouseIsPressed){
+            fill(none);
+            }
+            else{
+              fill(r,g,b);
+            }
+        */
+            fill(r,g,b);
+            noStroke();
+
+            ////dvd
+        rect(x,y,31,31);
+        rect(y,x,31,31);
+        rect(x,x,31,31);
+        //fill(r,g,b);
+          x = x + xspeed;
+          y = y + yspeed;
+
+          if (x + 100 >= width){
+            xspeed = -xspeed;
+            x= width - 100;
+            pickColor();
+          } else if (x <= 0){
+            xspeed = -xspeed;
+            x = 0;
+            pickColor();
+          }
+
+          if (y + 100 >= height){
+            yspeed = -yspeed;
+            y = height - 100;
+            pickColor();
+          } else if (y<=0){
+            yspeed = -yspeed;
+            y  = 0;
+            pickColor();
+          }
+
+        ////////mice
+        var circlerad = 31;
+          ellipse(mouseY, mouseX, circlerad, circlerad);
+          ellipse(mouseY*2, mouseX, circlerad, circlerad);
+          ellipse(mouseX, mouseX-300, circlerad, circlerad);
+          ellipse(mouseY*1.5, mouseX, circlerad, circlerad);
+          ellipse(mouseY, mouseX, circlerad, circlerad);
 
 
+        /////////drift
+        p = p + 1;
 
+        ellipse(p, y, circlerad);
+
+
+        /////////still
+        rect(200, 200, 500, 20);
+
+        noStroke();
+        vertex(x,255);
+        vertex(200,y);
+        vertex(20,490);
+        vertex(48,x-20);
+        vertex(637,255);
+        endShape();
+        }
+        if (pfing===4){
+          if (mouseIsPressed){
+            ellipse(mouseX, mouseY, 100, 100);
+            fill(0,0,0)
+
+          }
+
+          else {
+
+            setGradient(mouseX, mouseY, 50,100, c1, c2, Y_AXIS);
+            // rect(mouseX,mouseY, 50, 100);
+            fill(255,255,255);
+          }
+        }
 }
 
 
