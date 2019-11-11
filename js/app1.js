@@ -15,23 +15,23 @@ let datta1;
 
 function preload() {
 
-  data1 = loadStrings('assets/newtxt/1.txt');
-  data2 = loadStrings('assets/newtxt/alexis.txt');
-  data3 = loadStrings('assets/newtxt/an_actual_occasion.txt');
-  data4 = loadStrings('assets/newtxt/black_reason.txt');
-  data5 = loadStrings('assets/newtxt/chris.txt');
-  data6 = loadStrings('assets/newtxt/dreaming_abrahao.txt');
-  data7 = loadStrings('assets/newtxt/essayperspectivism.txt');
-  data8 = loadStrings('assets/newtxt/experimenting_immediation.txt');
-  data9 = loadStrings('assets/newtxt/filho.txt');
-  data10 = loadStrings('assets/newtxt/for_a_cinematic.txt');
-  data11 = loadStrings('assets/newtxt/hijaked.txt');
-  data12 = loadStrings('assets/newtxt/notes_on_space.txt');
-  data13 = loadStrings('assets/newtxt/pfmf.txt');
-  data14 = loadStrings('assets/newtxt/savage_marx.txt');
-  data15 = loadStrings('assets/newtxt/tiger.txt');
-  data16 = loadStrings('assets/newtxt/xapirimuu.txt');
-  data17 = loadStrings('assets/newtxt/door.txt');
+  data1 = loadStrings('assets/txtfilez/cisco.txt');
+  data2 = loadStrings('assets/txtfilez/alexis.txt');
+  data3 = loadStrings('assets/txtfilez/sher.txt');
+  data4 = loadStrings('assets/txtfilez/dos.txt');
+  data5 = loadStrings('assets/txtfilez/chris.txt');
+  data6 = loadStrings('assets/txtfilez/abrahao.txt');
+  data7 = loadStrings('assets/txtfilez/andre.txt');
+  data8 = loadStrings('assets/txtfilez/erin.txt');
+  data9 = loadStrings('assets/txtfilez/filho.txt');
+  data10 = loadStrings('assets/txtfilez/come.txt');
+  data11 = loadStrings('assets/txtfilez/fabi.txt');
+  data12 = loadStrings('assets/txtfilez/mont.txt');
+  data13 = loadStrings('assets/txtfilez/aaaa.txt');
+  data14 = loadStrings('assets/txtfilez/jean.txt');
+  data15 = loadStrings('assets/txtfilez/tiger.txt');
+  data16 = loadStrings('assets/txtfilez/sebastian.txt');
+  data17 = loadStrings('assets/txtfilez/morales.txt');
 
   mySound = loadSound('assets/bell.mp3');
   img[0] = loadImage("img/img0.png");
@@ -193,9 +193,8 @@ for (var x = 0; x < lines.length; x++) {
   str15 ? linky = "when_a_tiger_travels_to_other_planets.html": null;
   str16 ? linky = "xapirimuu": null;
   str17 ? linky = "passages.html": null;
-
-  str1 ? imgy = "img/button9.png": null;
-  str2 ? imgy = "img/button10.png": null;
+  str1 ? imgy = "img/button2.png": null;
+  str2 ? imgy = "img/button20.png": null;
   str3 ? imgy = "img/button11.png": null;
   str4 ? imgy = "img/button12.png": null;
   str5 ? imgy = "img/button13.png": null;
@@ -205,12 +204,12 @@ for (var x = 0; x < lines.length; x++) {
   str9 ? imgy = "img/button17.png": null;
   str10 ? imgy = "img/button18.png": null;
   str11 ? imgy = "img/button19.png": null;
-  str12 ? imgy = "img/button20.png": null;
+  str12 ? imgy = "img/button10.png": null;
   str13 ? imgy = "img/button21.png": null;
   str14 ? imgy = "img/button22.png": null;
-  str15 ? imgy = "img/button2.png": null;
-  str16 ? imgy = "img/button3.png": null;
-  str17 ? imgy = "img/button3.png": null;
+  str15 ? imgy = "img/tiger.png": null;
+  str16 ? imgy = "img/button3.jpg": null;
+  str17 ? imgy = "img/button15.png": null;
 
 
   const anchor = document.createElement('a');

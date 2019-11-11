@@ -7,8 +7,9 @@
 }
 /* gradient text */
 .propo {
-  width: 60%;
+  /* width: 60%; */
   margin-left: 10%;
+  margin-right: 5%;
   font-family: Arial Black, sans-serif;
   font-size: 22pt;
   font-weight:  100;
