@@ -89,6 +89,9 @@ const matchymatchy = () => {
     anchor.appendChild(iimg);
     li.appendChild(anchor);
     list.appendChild(li);
+    list.classList.add('fixed-bottom');
+    list.classList.add('con');
+
     scrollToBottom("suppy");
     // scrollToBottom("buttonz");
   }
