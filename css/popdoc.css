@@ -7,8 +7,9 @@
 }
 /* gradient text */
 .propo {
-  width: 60%;
+  /* width: 60%; */
   margin-left: 10%;
+  margin-right: 5%;
   font-family: Arial Black, sans-serif;
   font-size: 22pt;
   font-weight:  100;
@@ -87,7 +88,7 @@
       margin-left: 20%;
       border: 2px solid rgba(0, 0, 0, 0.1);
       height:100%;
-      /* width: 50%; */
+      width: 50%;
       overflow-y: scroll;
   }
   #suppy{
@@ -114,9 +115,4 @@
 }
 .sub{
   font-size: 12px;
-}
-.tinygradient{
-  width: 31px;
-  height: 31px;
-  background: linear-gradient(red, yellow);
 }

@@ -1,0 +1,78 @@
+.tinygradient{
+  width: 31px;
+  height: 31px;
+  /* background: linear-gradient(red, yellow); */
+}
+.grad1{
+  background: linear-gradient(90deg, rgba(58,180,115,1) 0%, rgba(48,46,173,1) 25%, rgba(2,126,108,1) 42%, rgba(165,252,69,1) 59%, rgba(77,218,179,1) 77%, rgba(88,174,122,1) 100%);
+}
+.grad2{
+  background: linear-gradient(90deg, rgba(167,180,58,1) 0%, rgba(46,149,173,1) 25%, rgba(2,126,98,1) 42%, rgba(252,69,69,1) 59%, rgba(177,218,77,1) 77%, rgba(225,231,87,1) 100%);
+}
+.grad3{
+  background: linear-gradient(0deg, rgba(61,195,34,1) 0%, rgba(45,253,247,1) 100%);
+}
+.grad4{
+  background: radial-gradient(circle, rgba(180,251,63,1) 0%, rgba(252,134,70,1) 100%);
+}
+.grad5{
+  background: linear-gradient(90deg, rgba(255,207,254,1) 0%, rgba(46,157,173,1) 25%, rgba(208,149,208,1) 42%, rgba(252,69,217,1) 59%, rgba(218,77,177,1) 77%, rgba(87,231,203,1) 100%);
+}
+.grad6{
+  background: radial-gradient(circle, rgba(180,251,63,1) 0%, rgba(252,134,70,1) 100%);
+}
+.grad7{
+  background: linear-gradient(0deg, rgba(195,153,34,1) 0%, rgba(207,226,20,1) 30%, rgba(253,45,143,1) 100%);
+}
+.grad8{
+background: radial-gradient(circle, rgba(251,63,187,1) 0%, rgba(251,63,63,1) 27%, rgba(203,99,67,1) 70%, rgba(83,68,252,1) 100%, rgba(252,70,70,1) 100%);
+}
+    .grad9{
+      background-image: linear-gradient(315deg, #ffeaa6, #ff6982);
+    }
+    .grad10{
+      background-image: linear-gradient(315deg, #e6dff2, #2e288a);
+    }
+    .grad11{
+      background-image: linear-gradient(315deg, #f7ee88, #00bec4);
+    }
+    .grad12{
+      background-image: linear-gradient(315deg, #e06500, #ffe380);
+    }
+    .grad13{
+      background-image: linear-gradient(315deg, #7db8af, #3d30c2);
+    }
+    .grad14{
+      background-image: linear-gradient(315deg, #fffa9c, #2b0059);
+    }
+    .grad15{
+      background-image: linear-gradient(315deg, #11f5c7, #f54e11);
+    }
+    .grad16{
+      background-image: linear-gradient(315deg, #00bcd9, #008a75);
+    }
+    .grad17{
+      background-image: linear-gradient(315deg, #ffb8e0, #310085);
+    }
+    .grad18{
+      background-image: linear-gradient(315deg, #34e38c, #00bec4);
+    }
+    .grad19{
+      background-image: linear-gradient(315deg, #ed5c99, #34e38c);
+    }
+    .grad20{
+      background-image: linear-gradient(315deg, #f2b94e, #4ef2a0);
+    }
+    .grad21{
+      background-image: linear-gradient(315deg, #f24e74, #4ef2d4);
+    }
+    .grad22{
+      background-image: linear-gradient(315deg, #db122c, #5b32ed);
+    }
+    .grad23{
+      background-image: linear-gradient(315deg, #039942, #990362);
+    }
+    .grad24{
+      background: linear-gradient(61deg, rgba(131,58,180,1) 0%, rgba(253,255,114,1) 82%, rgba(255,168,44,1) 100%);
+    }
+​

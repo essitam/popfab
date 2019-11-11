@@ -34,23 +34,24 @@ function pickColor() {
 
 
 function preload() {
-  data1 = loadStrings('assets/newtxt/1.txt');
-  data2 = loadStrings('assets/newtxt/alexis.txt');
-  data3 = loadStrings('assets/newtxt/an_actual_occasion.txt');
-  data4 = loadStrings('assets/newtxt/black_reason.txt');
-  data5 = loadStrings('assets/newtxt/chris.txt');
-  data6 = loadStrings('assets/newtxt/dreaming_abrahao.txt');
-  data7 = loadStrings('assets/newtxt/essayperspectivism.txt');
-  data8 = loadStrings('assets/newtxt/experimenting_immediation.txt');
-  data9 = loadStrings('assets/newtxt/filho.txt');
-  data10 = loadStrings('assets/newtxt/for_a_cinematic.txt');
-  data11 = loadStrings('assets/newtxt/hijaked.txt');
-  data12 = loadStrings('assets/newtxt/notes_on_space.txt');
-  data13 = loadStrings('assets/newtxt/pfmf.txt');
-  data14 = loadStrings('assets/newtxt/savage_marx.txt');
-  data15 = loadStrings('assets/newtxt/tiger.txt');
-  data16 = loadStrings('assets/newtxt/xapirimuu.txt');
-  data17 = loadStrings('assets/newtxt/door.txt');
+  data1 = loadStrings('assets/txtfilez/cisco.txt');
+  data2 = loadStrings('assets/txtfilez/alexis.txt');
+  data3 = loadStrings('assets/txtfilez/sher.txt');
+  data4 = loadStrings('assets/txtfilez/dos.txt');
+  data5 = loadStrings('assets/txtfilez/chris.txt');
+  data6 = loadStrings('assets/txtfilez/abrahao.txt');
+  data7 = loadStrings('assets/txtfilez/andre.txt');
+  data8 = loadStrings('assets/txtfilez/erin.txt');
+  data9 = loadStrings('assets/txtfilez/filho.txt');
+  data10 = loadStrings('assets/txtfilez/come.txt');
+  data11 = loadStrings('assets/txtfilez/fabi.txt');
+  data12 = loadStrings('assets/txtfilez/mont.txt');
+  data13 = loadStrings('assets/txtfilez/aaaa.txt');
+  data14 = loadStrings('assets/txtfilez/jean.txt');
+  data15 = loadStrings('assets/txtfilez/tiger.txt');
+  data16 = loadStrings('assets/txtfilez/sebastian.txt');
+  data17 = loadStrings('assets/txtfilez/morales.txt');
+
 }
 
 function loadme(){
