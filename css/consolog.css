@@ -1,5 +1,5 @@
 .con{
-  width: 60%;
+  /* width: 60%; */
   border: solid;
   border-width: 20px;
   /* border-color: red; */
@@ -9,6 +9,9 @@
      red,
      rgba(0, 0, 0, 0)
    ) 1 100%;
+}
+.conind{
+  width: 60%;
 }
 
 .fabfabfab{
