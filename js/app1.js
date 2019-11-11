@@ -37,6 +37,7 @@ function preload() {
   img[0] = loadImage("img/img0.png");
   img[1] =  loadImage("img/img1.png");
   bg = loadImage("img/background.jpg");
+  // onoverlay();
 }
 
 
