@@ -61,8 +61,8 @@ const matchymatchy = () => {
     str15 ? linky = "when_a_tiger_travels_to_other_planets.html": null;
     str16 ? linky = "xapirimuu.html": null;
     str17 ? linky = "passages.html": null;
-    str1 ? imgy = "img/button9.png": null;
-    str2 ? imgy = "img/button10.png": null;
+    str1 ? imgy = "img/button2.png": null;
+    str2 ? imgy = "img/button20.png": null;
     str3 ? imgy = "img/button11.png": null;
     str4 ? imgy = "img/button12.png": null;
     str5 ? imgy = "img/button13.png": null;
@@ -72,10 +72,10 @@ const matchymatchy = () => {
     str9 ? imgy = "img/button17.png": null;
     str10 ? imgy = "img/button18.png": null;
     str11 ? imgy = "img/button19.png": null;
-    str12 ? imgy = "img/button20.png": null;
+    str12 ? imgy = "img/button10.png": null;
     str13 ? imgy = "img/button21.png": null;
     str14 ? imgy = "img/button22.png": null;
-    str15 ? imgy = "img/button2.png": null;
+    str15 ? imgy = "img/tiger.png": null;
     str16 ? imgy = "img/button3.jpg": null;
     str17 ? imgy = "img/button15.png": null;
     const anchor = document.createElement('a');
@@ -111,28 +111,40 @@ function buttonzz() {
 
   var imgArray = ["img/button8.png", "img/button18.png", "img/button15.png","img/button16.png", "img/button10.png", "img/button11.png", "img/button22.png" ];
   //blackcat
+  const para =  document.getElementById('buttonz');           // Insert text
+
+  const iimg4 = document.createElement("IMG");
+  iimg4.setAttribute("src", "thingies/thingyyyypurpllle.png");
+  iimg4.className = "tinygradient";
+  iimg4.addEventListener("click", function(){
+    cons();
+  }, true);
+  para.appendChild(iimg4);
   const iimg = document.createElement("IMG");
   iimg.setAttribute("src", imgArray[0]);
   iimg.addEventListener("click", function(){
     blackcat("p");
   }, true);
-  const para =  document.getElementById('buttonz');           // Insert text
   para.appendChild(iimg);
   // blender
-  const iimg2 = document.createElement("IMG");
-  iimg2.setAttribute("src", imgArray[1]);
+  // const iimg2 = document.createElement("IMG");
+  // iimg2.setAttribute("src", imgArray[1]);
+  const iimg2 = document.createElement("div");
+  iimg2.className ='tinygradient';
+  iimg2.classList.add('grad2');
   iimg2.addEventListener("click", function(){
     document.getElementById('scroll').className = '';
     toggle_visibility('hellooo');
     document.getElementById('gradientt').className = 'hell';
-    pfing=3;
+    pfing=2;
   }, true);
   para.appendChild(iimg2);
   //redredredpopopop
-  // const iimg3 = document.createElement("IMG");
-  // iimg3.setAttribute("src", imgArray[2]);
-  const iimg3 = document.createElement("div");
-  iimg3.className ='tinygradient';
+  const iimg3 = document.createElement("IMG");
+  iimg3.setAttribute("src", "img/glowing.png");
+  // const iimg3 = document.createElement("div");
+  // iimg3.className ='tinygradient';
+  // iimg3.classList.add('grad7');
   iimg3.addEventListener("click", function(){
     toggle_visibility('hellooo');
     document.getElementById('scroll').className = '';
@@ -141,15 +153,10 @@ function buttonzz() {
   }, true);
   para.appendChild(iimg3);
   //menu
-  const iimg4 = document.createElement("IMG");
-  iimg4.setAttribute("src", imgArray[3]);
-  iimg4.addEventListener("click", function(){
-    cons();
-  }, true);
-  para.appendChild(iimg4);
+
   //jumping o
   const iimg5 = document.createElement("button");
-  iimg5.innerText="ooOo0O";
+  iimg5.innerText="O";
   // const iimg5 = document.createElement("IMG");
   // iimg5.setAttribute("src", imgArray[4]);
   iimg5.addEventListener("click", function(){
@@ -168,10 +175,16 @@ function buttonzz() {
   para.appendChild(iimg6);
   // const iimg7 = document.createElement("IMG");
   // iimg7.setAttribute("src", imgArray[6]);
-  // iimg7.addEventListener("click", function(){
-  //   document.getElementById('hellooo').style.display = 'none';
-  // }, true);
-  // para.appendChild(iimg7);
+  const iimg7 = document.createElement("div");
+  iimg7.className ='tinygradient';
+  iimg7.classList.add('grad7');
+  iimg7.addEventListener("click", function(){
+    document.getElementById('scroll').className = '';
+    toggle_visibility('hellooo');
+    document.getElementById('gradientt').className = 'hell';
+    pfing=3;
+  }, true);
+  para.appendChild(iimg7);
   para.classList.add('float-right');
 
 };
