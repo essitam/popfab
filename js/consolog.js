@@ -90,7 +90,7 @@ const matchymatchy = () => {
     li.appendChild(anchor);
     list.appendChild(li);
     scrollToBottom("suppy");
-    scrollToBottom("buttonz");
+    // scrollToBottom("buttonz");
   }
 };
 function toggle_visibility(id) {
@@ -113,78 +113,81 @@ function buttonzz() {
   //blackcat
   const para =  document.getElementById('buttonz');           // Insert text
 
-  const iimg4 = document.createElement("IMG");
-  iimg4.setAttribute("src", "thingies/thingyyyypurpllle.png");
-  iimg4.className = "tinygradient";
-  iimg4.addEventListener("click", function(){
-    cons();
-  }, true);
-  para.appendChild(iimg4);
-  const iimg = document.createElement("IMG");
-  iimg.setAttribute("src", imgArray[0]);
-  iimg.addEventListener("click", function(){
-    blackcat("p");
-  }, true);
-  para.appendChild(iimg);
-  // blender
-  // const iimg2 = document.createElement("IMG");
-  // iimg2.setAttribute("src", imgArray[1]);
-  const iimg2 = document.createElement("div");
-  iimg2.className ='tinygradient';
-  iimg2.classList.add('grad2');
-  iimg2.addEventListener("click", function(){
-    document.getElementById('scroll').className = '';
-    toggle_visibility('hellooo');
-    document.getElementById('gradientt').className = 'hell';
-    pfing=2;
-  }, true);
-  para.appendChild(iimg2);
-  //redredredpopopop
-  const iimg3 = document.createElement("IMG");
-  iimg3.setAttribute("src", "img/glowing.png");
-  // const iimg3 = document.createElement("div");
-  // iimg3.className ='tinygradient';
-  // iimg3.classList.add('grad7');
-  iimg3.addEventListener("click", function(){
-    toggle_visibility('hellooo');
-    document.getElementById('scroll').className = '';
-    document.getElementById('gradientt').className = 'redredred';
-    pfing=1;
-  }, true);
-  para.appendChild(iimg3);
-  //menu
-
-  //jumping o
-  const iimg5 = document.createElement("button");
-  iimg5.innerText="O";
-  // const iimg5 = document.createElement("IMG");
-  // iimg5.setAttribute("src", imgArray[4]);
-  iimg5.addEventListener("click", function(){
-    blackc(['o']);
-  }, true);
-  //double gradient
-  para.appendChild(iimg5);
-
-  const iimg6 = document.createElement("IMG");
-  iimg6.setAttribute("src", imgArray[5]);
-  iimg6.addEventListener("click", function(){
-    document.getElementById('gradientt').className = 'propo';
-    document.getElementById('hellooo').style.display = 'none';
-    document.getElementById('scroll').classList.add('bgrnd');
-  }, true);
-  para.appendChild(iimg6);
-  // const iimg7 = document.createElement("IMG");
-  // iimg7.setAttribute("src", imgArray[6]);
   const iimg7 = document.createElement("div");
   iimg7.className ='tinygradient';
   iimg7.classList.add('grad7');
+  iimg7.classList.add('float-right');
   iimg7.addEventListener("click", function(){
     document.getElementById('scroll').className = '';
     toggle_visibility('hellooo');
     document.getElementById('gradientt').className = 'hell';
     pfing=3;
   }, true);
+
+  const iimg = document.createElement("IMG");
+  iimg.setAttribute("src", imgArray[0]);
+  iimg.classList.add('float-right');
+  iimg.addEventListener("click", function(){
+    blackcat("p");
+  }, true);
+
+  // blender
+  // const iimg2 = document.createElement("IMG");
+  // iimg2.setAttribute("src", imgArray[1]);
+  const iimg2 = document.createElement("div");
+  iimg2.className ='tinygradient';
+  iimg2.classList.add('grad2');
+  iimg2.classList.add('float-right');
+  iimg2.addEventListener("click", function(){
+    document.getElementById('scroll').className = '';
+    toggle_visibility('hellooo');
+    document.getElementById('gradientt').className = 'hell';
+    pfing=2;
+  }, true);
+  //redredredpopopop
+  const iimg3 = document.createElement("IMG");
+  iimg3.setAttribute("src", "img/glowing.png");
+  iimg3.classList.add('float-right');
+  iimg3.addEventListener("click", function(){
+    toggle_visibility('hellooo');
+    document.getElementById('scroll').className = '';
+    document.getElementById('gradientt').className = 'redredred';
+    pfing=1;
+  }, true);
+  const iimg5 = document.createElement("button");
+  iimg5.innerText="O";
+  iimg5.classList.add('float-right');
+  iimg5.addEventListener("click", function(){
+    blackc(['o']);
+  }, true);
+  const iimg4 = document.createElement("IMG");
+  iimg4.setAttribute("src", "thingies/thingyyyypurpllle.png");
+  iimg4.className = "tinygradient";
+  iimg4.classList.add('float-right');
+  iimg4.addEventListener("click", function(){
+    cons();
+  }, true);
+
+  //double gradient
+
+  const iimg6 = document.createElement("IMG");
+  iimg6.setAttribute("src", imgArray[5]);
+  iimg6.classList.add('float-right');
+  iimg6.addEventListener("click", function(){
+    document.getElementById('gradientt').className = 'propo';
+    document.getElementById('hellooo').style.display = 'none';
+    document.getElementById('scroll').classList.add('bgrnd');
+  }, true);
   para.appendChild(iimg7);
+  para.appendChild(iimg4);
+para.appendChild(iimg5);
+para.appendChild(iimg);
+para.appendChild(iimg3);
+para.appendChild(iimg6);
+para.appendChild(iimg2);
+
+
+
   para.classList.add('float-right');
 
 };
