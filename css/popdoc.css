@@ -1,5 +1,6 @@
 /* gradient background */
 .bgrnd{
+
   background: linear-gradient(45deg, rgba(58,180,115,1) 0%, rgba(46,173,169,1) 25%, rgba(142,174,93,1) 42%, rgba(252,176,69,1) 59%, rgba(218,122,77,1) 77%, rgba(174,88,88,1) 100%);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
@@ -86,7 +87,7 @@
 #scroll{
   	  position: absolute;
       margin-left: 20%;
-      border: 2px solid rgba(0, 0, 0, 0.1);
+      /* border: 2px solid rgba(0, 0, 0, 0.1); */
       height:100%;
       width: 50%;
       overflow-y: scroll;
@@ -115,4 +116,12 @@
 }
 .sub{
   font-size: 12px;
+}
+#fakebgrnd{
+  position: absolute;
+  margin-left: 20%;
+  /* background:blue; */
+  /* border: 2px solid rgba(0, 0, 0, 0.1); */
+  height:100%;
+  width: 50%;
 }
