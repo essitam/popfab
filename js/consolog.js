@@ -129,8 +129,10 @@ function buttonzz() {
   }, true);
   para.appendChild(iimg2);
   //redredredpopopop
-  const iimg3 = document.createElement("IMG");
-  iimg3.setAttribute("src", imgArray[2]);
+  // const iimg3 = document.createElement("IMG");
+  // iimg3.setAttribute("src", imgArray[2]);
+  const iimg3 = document.createElement("div");
+  iimg3.className ='tinygradient';
   iimg3.addEventListener("click", function(){
     toggle_visibility('hellooo');
     document.getElementById('scroll').className = '';
@@ -146,13 +148,16 @@ function buttonzz() {
   }, true);
   para.appendChild(iimg4);
   //jumping o
-  const iimg5 = document.createElement("IMG");
-  iimg5.setAttribute("src", imgArray[4]);
+  const iimg5 = document.createElement("button");
+  iimg5.innerText="ooOo0O";
+  // const iimg5 = document.createElement("IMG");
+  // iimg5.setAttribute("src", imgArray[4]);
   iimg5.addEventListener("click", function(){
     blackc(['o']);
   }, true);
   //double gradient
   para.appendChild(iimg5);
+
   const iimg6 = document.createElement("IMG");
   iimg6.setAttribute("src", imgArray[5]);
   iimg6.addEventListener("click", function(){

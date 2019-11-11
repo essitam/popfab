@@ -13,6 +13,7 @@ var timer = 10;
 var nextTime = timer;
 let button;
 var txtArray;
+var divvrey;
 
 function preload() {
 txtArray = ["vrey_txt/vrey_pop_up/vrey_politics.txtd","vrey_txt/vrey_pop_up/vrey_500flowers.txt	","vrey_txt/vrey_pop_up/vrey_a<anda3.txt	","vrey_txt/vrey_pop_up/vrey_abody.txt	","vrey_txt/vrey_pop_up/vrey_alce.txt	","vrey_txt/vrey_pop_up/vrey_asleep.txt	","vrey_txt/vrey_pop_up/vrey_bagsindryer.txt	","vrey_txt/vrey_pop_up/vrey_biking.txt	","vrey_txt/vrey_pop_up/vrey_birds.txt	","vrey_txt/vrey_pop_up/vrey_björk.txt	","vrey_txt/vrey_pop_up/vrey_bobcat.txt	","vrey_txt/vrey_pop_up/vrey_bodiesofwater.txt	","vrey_txt/vrey_pop_up/vrey_boots.txt	","vrey_txt/vrey_pop_up/vrey_cardamom.txt	","vrey_txt/vrey_pop_up/vrey_chairs.txt	","vrey_txt/vrey_pop_up/vrey_chinotto.txt	","vrey_txt/vrey_pop_up/vrey_cloggedpores.txt	","vrey_txt/vrey_pop_up/vrey_continuum.txt	","vrey_txt/vrey_pop_up/vrey_conversationsofafuturepast.txt	","vrey_txt/vrey_pop_up/vrey_derrida.txt	","vrey_txt/vrey_pop_up/vrey_dogcafe.txt	","vrey_txt/vrey_pop_up/vrey_dougie.txt	","vrey_txt/vrey_pop_up/vrey_expanding.txt	","vrey_txt/vrey_pop_up/vrey_faces.txt	","vrey_txt/vrey_pop_up/vrey_fall.txt	","vrey_txt/vrey_pop_up/vrey_fanfiction.txt	","vrey_txt/vrey_pop_up/vrey_feetlylullaby.txt	","vrey_txt/vrey_pop_up/vrey_flcl.txt	","vrey_txt/vrey_pop_up/vrey_footdoctor.txt	","vrey_txt/vrey_pop_up/vrey_furniture.txt	","vrey_txt/vrey_pop_up/vrey_futurepast.txt	","vrey_txt/vrey_pop_up/vrey_gloriousbody.txt	","vrey_txt/vrey_pop_up/vrey_happeningagain.txt	","vrey_txt/vrey_pop_up/vrey_heavystone.txt	","vrey_txt/vrey_pop_up/vrey_interface.txt	","vrey_txt/vrey_pop_up/vrey_laundroworld.txt	","vrey_txt/vrey_pop_up/vrey_livingroom.txt	","vrey_txt/vrey_pop_up/vrey_lottery.txt	","vrey_txt/vrey_pop_up/vrey_mornings.txt	","vrey_txt/vrey_pop_up/vrey_moten.txt	","vrey_txt/vrey_pop_up/vrey_multiversework.txt	","vrey_txt/vrey_pop_up/vrey_notes.txt	","vrey_txt/vrey_pop_up/vrey_octopodalmode.txt	","vrey_txt/vrey_pop_up/vrey_oldfriend.txt	","vrey_txt/vrey_pop_up/vrey_oops.txt	","vrey_txt/vrey_pop_up/vrey_oranges.txt	","vrey_txt/vrey_pop_up/vrey_pacing.txt	","vrey_txt/vrey_pop_up/vrey_padthai.txt	","vrey_txt/vrey_pop_up/vrey_pebbles.txt	","vrey_txt/vrey_pop_up/vrey_popopsong.txt	","vrey_txt/vrey_pop_up/vrey_popsong.txt	","vrey_txt/vrey_pop_up/vrey_recognizing.txt	","vrey_txt/vrey_pop_up/vrey_repetition.txt	","vrey_txt/vrey_pop_up/vrey_rerolling.txt	","vrey_txt/vrey_pop_up/vrey_restaurants.txt	","vrey_txt/vrey_pop_up/vrey_riget.txt	","vrey_txt/vrey_pop_up/vrey_seriesofsqueaks.txt	","vrey_txt/vrey_pop_up/vrey_smoothoperators.txt	","vrey_txt/vrey_pop_up/vrey_socks.txt	","vrey_txt/vrey_pop_up/vrey_songpop.txt	","vrey_txt/vrey_pop_up/vrey_spectreconfetti.txt	","vrey_txt/vrey_pop_up/vrey_spinach.txt	","vrey_txt/vrey_pop_up/vrey_splash.txt	","vrey_txt/vrey_pop_up/vrey_stones.txt	","vrey_txt/vrey_pop_up/vrey_sweeping.txt	","vrey_txt/vrey_pop_up/vrey_swimming.txt	","vrey_txt/vrey_pop_up/vrey_thingies.txt	","vrey_txt/vrey_pop_up/vrey_timemachine.txt	","vrey_txt/vrey_pop_up/vrey_tinygigi.txt	","vrey_txt/vrey_pop_up/vrey_togetherness.txt	","vrey_txt/vrey_pop_up/vrey_turningpoint.txt	","vrey_txt/vrey_pop_up/vrey_twostripes.txt	","vrey_txt/vrey_pop_up/vrey_underconstruction.txt	","vrey_txt/vrey_pop_up/vrey_v-e-r-y.txt	","vrey_txt/vrey_pop_up/vrey_variations.txt	","vrey_txt/vrey_pop_up/vrey_watertower.txt	","vrey_txt/vrey_pop_up/vrey_writingtyping.txt	","vrey_txt/vrey_pop_up/vrey_xfiles.txt	","vrey_txt/vrey_pop_up/vrey_xfilesagain.txt	", "vrey_txt/vrey_pop_up/vrey_xrayghosts.txt	"];
@@ -84,6 +85,14 @@ function setup() {
                     //     button.position(100 + 200, 65);
                     //     button.mousePressed(speak);
                     //     button.parent('notice');
+                    var rVrey=data1.join(' ');
+
+  divvrey= createDiv(rVrey);
+  divvrey.parent('#text');
+  divvrey.style('color', 'yellow');
+  divvrey.style('font-size', '20px');
+  divvrey.class('vreyyy')
+  // divvrey.position(200);
 
 }
 
@@ -110,15 +119,37 @@ function draw(){
   ellipse(mouseX, mouseY, 0.4, 0.4);
 
 }
-
-
+// var divvrey;
+// function removeit(){
+//   divvrey.remove();
+//   drawText();
+// }
 function drawText() {
-
-  clear();
+  // clear();
+  // var divvrey
+ //   background(bg);
+ // divvrey.remove();
+ var rVrey=data1.join(' ');
+   // textSize(20 + (mouseX / width)*33);
+   // stroke('#222222');
+   //   strokeWeight(2.5);
+   //   fill('yellow')
+   // text(rVrey, 0, 500, 500, 600);
+  // clear();
 //   background(bg);
-  var rVrey=data1.join(' ');
+
   var vreyvrey = document.getElementById('text');
-  vreyvrey.innerText = rVrey;
+
+  // divvrey= createDiv(rVrey);
+  divvrey.html(rVrey);
+  var sizeVrey = 20 + (mouseX / width)*33;
+  divvrey.style('font-size', sizeVrey + 'px');
+  divvrey.style('color', 'yellow');
+  // divvrey.parent('#text');
+  // divvrey.html('text', true);
+    // vreyvrey.innerText = divvrey;
+  // tWidth= textWidth(rVrey);
+  // text(rVrey, tWidth, tWidth);
   data1 = loadStrings(random(txtArray));
   // text('PDF1', 1000, 700);
   // text('PDF2', 1080, 700);
@@ -145,17 +176,17 @@ function drawText() {
 
 
 
-// function mouseClicked() {
-//
-//   typed="";
-//   x = 100;
-//   y = 220;
-//   lines = markov.generateSentences(10);
-//   drawText();
-//
-//
-//
-// }
+function mouseClicked() {
+
+  // typed="";
+  // x = 100;
+  // y = 220;
+  // lines = markov.generateSentences(10);
+  drawText();
+
+
+
+}
 
 // function keyTyped(){
 //   if (keyCode != RETURN) typed += key;
