@@ -7,7 +7,7 @@ html, body{
   /* background: linear-gradient(red, orange); */
   margin: 0;
   height: 100vh;
-  font-family: arial black;
+  font-family: Arial Black, sans-serif;
   font-size: 13pt;
   background: linear-gradient(45deg, rgba(58,180,115,1) 0%, rgba(46,173,169,1) 25%, rgba(142,174,93,1) 42%, rgba(252,176,69,1) 59%, rgba(218,122,77,1) 77%, rgba(174,88,88,1) 100%) no-repeat;
   background-size: 400% 400%;

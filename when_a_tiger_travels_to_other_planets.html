@@ -29,7 +29,15 @@
 		<link rel="stylesheet" href="css/fab.css" type="text/css" />
 		<link rel="stylesheet" href="css/popdoc.css" type="text/css" />
 		<link rel="stylesheet" href="css/gradientz.css" type="text/css" />
-
+		<script type="text/javascript" src="js/switcheroo.js"></script>
+		<link rel="stylesheet" href="css/switcheroo.css">
+		<style>
+	.easteregg{
+		/* position:absolute; */
+		background-image: url('https://media.giphy.com/media/IzcLSLCfDda6OEYTF7/200w_d.gif');
+		background-size: cover;
+}
+		</style>
 	</head>
 	<body>
 		<div id="loader-wrapper">
@@ -42,10 +50,11 @@
 						<div  id="suppy"></div>
 						<div id="buttonz" class="float-right buttonz fixed-bottom " >
 							<a href="index.html" target="_blank"> <img src="img/popfab.png" class="mt-1 float-right"> </a>
+							<img onclick="document.getElementById('fakebgrnd').classList='easteregg'" src="assets/frogpack.png" width="31px" height="31px">
 						</div>
 
 			<div id="hellooo"></div>
-			<a href="pdfs/kuipers, halbe - when a tiger travels to other planets....pdf"
+			<a href="pdfs/kuipers, halbe - when a tiger travels to other planets....pdf">
 			<div class="float-right title overll">
 				<button class="blendit">
 					when a tiger travels to other planets…
@@ -55,7 +64,7 @@
 			</div>
 		</a>
 		<div id="fakebgrnd"></div>
-
+		<!-- <div id="easteregg"></div> -->
 			<div class="scroll-box" id="scroll">
 		 		<div id="gradientt">
 

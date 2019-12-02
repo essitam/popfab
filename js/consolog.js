@@ -23,6 +23,12 @@ function cons() {
   // drawText();
   matchymatchy();
 }
+function switcheroo(svvi){
+  var x = document.querySelectorAll('p');
+  for (i = 0; i < x.length; i++) {
+  x[i].className = svvi;
+}
+}
 const matchymatchy = () => {
   for (var x = 0; x < lines.length; x++) {
     var str1 = match(datta1, lines[x]);
@@ -125,6 +131,7 @@ function buttonzz() {
     toggle_visibility('hellooo');
     document.getElementById('gradientt').className = 'hell';
     pfing=3;
+    document.getElementById('fakebgrnd').classList.add('hideme');
   }, true);
 
   const iimg = document.createElement("IMG");
@@ -134,10 +141,7 @@ function buttonzz() {
     blackcat("p");
   }, true);
 
-  // blender
-  // const iimg2 = document.createElement("IMG");
-  // iimg2.setAttribute("src", imgArray[1]);
-  const iimg2 = document.createElement("div");
+    const iimg2 = document.createElement("div");
   iimg2.className ='tinygradient';
   iimg2.classList.add('grad2');
   iimg2.classList.add('float-right');
@@ -145,6 +149,7 @@ function buttonzz() {
     document.getElementById('scroll').className = '';
     toggle_visibility('hellooo');
     document.getElementById('gradientt').className = 'hell';
+    document.getElementById('fakebgrnd').classList.add('hideme');
     pfing=2;
   }, true);
   //redredredpopopop
@@ -155,6 +160,9 @@ function buttonzz() {
     toggle_visibility('hellooo');
     document.getElementById('scroll').className = '';
     document.getElementById('gradientt').className = 'redredred';
+    document.getElementById('fakebgrnd').classList.add('hideme');
+
+    // document.
     pfing=1;
   }, true);
   const iimg5 = document.createElement("button");
@@ -172,22 +180,83 @@ function buttonzz() {
   }, true);
 
   //double gradient
-
   const iimg6 = document.createElement("IMG");
   iimg6.setAttribute("src", imgArray[5]);
   iimg6.classList.add('float-right');
   iimg6.addEventListener("click", function(){
     document.getElementById('gradientt').className = 'propo';
     document.getElementById('hellooo').style.display = 'none';
-    document.getElementById('fakebgrnd').classList.add('bgrnd');
+    document.getElementById('fakebgrnd').className = 'bgrnd';
+    // document.getElementById('fakebgrnd').classList.add('showme');
   }, true);
-  para.appendChild(iimg7);
-  para.appendChild(iimg4);
-para.appendChild(iimg5);
-para.appendChild(iimg);
-para.appendChild(iimg3);
-para.appendChild(iimg6);
-para.appendChild(iimg2);
+  //double gradient
+  const iimg8 = document.createElement("button");
+  iimg8.innerText="p";
+  iimg8.setAttribute('style', 'background: linear-gradient(90deg, rgba(158,217,8,1) 0%, rgba(210,255,76,1) 35%, rgba(59,181,121,1) 100%);color: #34e38c; mix-blend-mode:difference;');
+  iimg8.classList.add('float-right');
+  iimg8.classList.add('dm');
+  iimg8.addEventListener("click", function(){
+    switcheroo('dm');
+  }, true);
+  const iimg9 = document.createElement("button");
+  iimg9.innerText="p";
+  iimg9.setAttribute('style', 'background-image: linear-gradient(315deg, #f24e74, #4ef2d4);color: #cb63ef;mix-blend-mode:difference;');
+  iimg9.classList.add('float-right');
+  iimg9.classList.add('zilla');
+  iimg9.addEventListener("click", function(){
+    switcheroo('zilla');
+  }, true);
+  const iimg10 = document.createElement("button");
+  iimg10.innerText="f";
+  iimg10.setAttribute('style', ' background: linear-gradient(315deg, #00bcd9, #008a75);');
+  iimg10.classList.add('float-right');
+  iimg10.classList.add('arialblack');
+  iimg10.addEventListener("click", function(){
+    switcheroo('arialblack');
+  }, true);
+  const iimg11 = document.createElement("button");
+  iimg11.innerText="a";
+  iimg11.classList.add('float-right');
+  iimg11.classList.add('tomorrow');
+  iimg11.setAttribute('style', 'background: radial-gradient(circle, rgba(180,251,63,1) 0%, rgba(252,134,70,1) 100%);');
+  iimg11.addEventListener("click", function(){
+    switcheroo('tomorrow');
+  }, true);
+  const iimg12 = document.createElement("a");
+  iimg12.setAttribute('href', 'dialpad.html')
+  iimg12.innerText="b";
+  iimg12.classList.add('float-right');
+  iimg12.classList.add('zilla');
+  iimg12.addEventListener("click", function(){
+    switcheroo('zilla');
+  }, true);
+  para.appendChild(iimg4); //meat
+  para.appendChild(iimg12); //b
+  para.appendChild(iimg11); //a
+  para.appendChild(iimg10); //f
+  para.appendChild(iimg7); //pinkgrad
+  para.appendChild(iimg9); //p
+
+  para.appendChild(iimg); //blackcat
+  para.appendChild(iimg5);//o
+  para.appendChild(iimg3); //red
+
+  para.appendChild(iimg6); //gradientz
+  para.appendChild(iimg2); //colision
+  para.appendChild(iimg8); //p
+  // para.appendChild(iimg12);
+  // para.appendChild(iimg11);
+  // para.appendChild(iimg10);
+  // para.appendChild(iimg7);
+  // para.appendChild(iimg9);
+  // para.appendChild(iimg4);
+  // para.appendChild(iimg5);
+  // para.appendChild(iimg);
+  // para.appendChild(iimg3);
+  // para.appendChild(iimg6);
+  // para.appendChild(iimg2);
+  // para.appendChild(iimg8);
+
 
 
 

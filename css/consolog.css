@@ -16,8 +16,8 @@
 
 .fabfabfab{
    background-image: linear-gradient(to bottom, red, orange);
-   font-family: arial black;
-   font-size: 14px;
+   /* font-family: arial black;
+   font-size: 14px; */
 
 }
 .fabfabfab:hover{
