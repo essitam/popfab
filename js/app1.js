@@ -37,6 +37,7 @@ function preload() {
   img[0] = loadImage("img/img0.png");
   img[1] =  loadImage("img/img1.png");
   bg = loadImage("img/background.jpg");
+  // onoverlay();
 }
 
 
@@ -191,7 +192,7 @@ for (var x = 0; x < lines.length; x++) {
   str13 ? linky = "pfmf.html": null;
   str14 ? linky = "savage_marx.html": null;
   str15 ? linky = "when_a_tiger_travels_to_other_planets.html": null;
-  str16 ? linky = "xapirimuu": null;
+  str16 ? linky = "xapirimuu.html": null;
   str17 ? linky = "passages.html": null;
   str1 ? imgy = "img/button2.png": null;
   str2 ? imgy = "img/button20.png": null;

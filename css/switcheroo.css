@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Inconsolata|Josefin+Sans|Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Arvo|Arya|Averia+Sans+Libre|Baloo+Bhai|Barriecito|Black+Ops+One|Bungee+Shade|Cherry+Cream+Soda|Codystar|DM+Serif+Display|Fascinate+Inline|Faster+One|Fredoka+One|Iceland|Krona+One|Patua+One|Poller+One|Press+Start+2P|Prosto+One|Racing+Sans+One|Rammetto+One|Ranchers|Righteous|Saira+Stencil+One|Sarpanch|Slackey|Wallpoet|Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mukta:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+@import url('wheremykeys.otf');
+@import url('CallingCode-Regular.otf');
+.keys{
+  font-family: 'Where My Keys';
+
+}
+.poppin{
+
+
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.quantico{
+
+
+    font-family: 'Quantico', sans-serif;
+
+
+}
+.source{
+    font-family: 'Source Code Pro', monospace;
+}
+.incon{
+    font-family: 'Inconsolata', monospace;
+}
+.josefin{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.tomorrow{
+    font-family: 'Tomorrow', sans-serif;
+}
+.acme{
+    font-family: 'Acme', sans-serif;
+}
+.arialblack{
+  font-family: arial black, sans-serif);
+}
+.arvo{font-family: 'Arvo', serif;}
+.righteous{font-family: 'Righteous', cursive;}
+.patuo-one{font-family: 'Patua One', cursive;}
+.baloo-bhai{font-family: 'Baloo Bhai', cursive;}
+.fredoka{font-family: 'Fredoka One', cursive;}
+.alfa-slab{font-family: 'Alfa Slab One', cursive;}
+.archivo-black{font-family: 'Archivo Black', sans-serif;}
+.poller{font-family: 'Poller One', cursive;}
+/*hehe*/
+.press-start{font-family: 'Press Start 2P', cursive;}
+.wallpoet{font-family: 'Wallpoet', cursive;}
+.black-ops{font-family: 'Black Ops One', cursive;}
+.racing{font-family: 'Racing Sans One', cursive;}
+.saira{font-family: 'Saira Stencil One', cursive;}
+/* svvi */
+.dm{font-family: 'DM Serif Display', serif;}
+.barriecito{font-family: 'Barriecito', cursive;}
+.zilla{font-family: 'Zilla Slab Highlight', cursive;}
+.faster{font-family: 'Faster One', cursive;}
+/*thisonePOP*/
+.codystar{font-family: 'Codystar', cursive;}
+.bungee{font-family: 'Bungee Shade', cursive;}
+.krona{font-family: 'Krona One', sans-serif;}
+.averia{font-family: 'Averia Sans Libre', cursive;}
+.sarpanch{font-family: 'Sarpanch', sans-serif;}
+.iceland{font-family: 'Iceland', cursive;}
+.rammetto{font-family: 'Rammetto One', cursive;}
+.prosto{font-family: 'Prosto One', cursive;}
+.slackey{font-family: 'Slackey', cursive;}
+.ranchers{font-family: 'Ranchers', cursive;}
+.arya{font-family: 'Arya', sans-serif;}
+.cherry{font-family: 'Cherry Cream Soda', cursive;}
+.fascinate{font-family: 'Fascinate Inline', cursive;}

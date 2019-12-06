@@ -1,5 +1,11 @@
 /* gradient background */
+@import url('https://fonts.googleapis.com/css?family=Acme|Inconsolata|Josefin+Sans|Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Arvo|Arya|Averia+Sans+Libre|Baloo+Bhai|Barriecito|Black+Ops+One|Bungee+Shade|Cherry+Cream+Soda|Codystar|DM+Serif+Display|Fascinate+Inline|Faster+One|Fredoka+One|Iceland|Krona+One|Patua+One|Poller+One|Press+Start+2P|Prosto+One|Racing+Sans+One|Rammetto+One|Ranchers|Righteous|Saira+Stencil+One|Sarpanch|Slackey|Wallpoet|Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
 .bgrnd{
+
   background: linear-gradient(45deg, rgba(58,180,115,1) 0%, rgba(46,173,169,1) 25%, rgba(142,174,93,1) 42%, rgba(252,176,69,1) 59%, rgba(218,122,77,1) 77%, rgba(174,88,88,1) 100%);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
@@ -8,9 +14,10 @@
 /* gradient text */
 .propo {
   /* width: 60%; */
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 5%;
   font-family: Arial Black, sans-serif;
+      /* font-family: 'StripedSansBlack'; */
   font-size: 22pt;
   font-weight:  100;
   letter-spacing: 2px;
@@ -36,7 +43,7 @@
 .overll{
   margin: 0;
   height: 100vh;
-  font-family: "Exo", sans-serif;
+  /* font-family: "Exo", sans-serif; */
   color: #fff;
   background: linear-gradient(45deg, rgba(58,180,115,1) 0%, rgba(46,173,169,1) 25%, rgba(142,174,93,1) 42%, rgba(252,176,69,1) 59%, rgba(218,122,77,1) 77%, rgba(174,88,88,1) 100%);
   background-size: 400% 400%;
@@ -86,13 +93,15 @@
 #scroll{
   	  position: absolute;
       margin-left: 20%;
-      border: 2px solid rgba(0, 0, 0, 0.1);
+      /* border: 2px solid rgba(0, 0, 0, 0.1); */
       height:100%;
-      width: 50%;
+      width: 60%;
       overflow-y: scroll;
   }
   #suppy{
-    width: 50%;
+    /* width: 50%; */
+    font-family: 'Source Code Pro', monospace;
+    size: 11px;
   }
 .indent{
   margin-left: 5%;
@@ -116,3 +125,29 @@
 .sub{
   font-size: 12px;
 }
+#fakebgrnd{
+  position: absolute;
+  margin-left: 20%;
+  /* background:blue; */
+  /* border: 2px solid rgba(0, 0, 0, 0.1); */
+  height:100%;
+  width: 60%;
+}
+.hideme{
+  display: none;
+}
+.showme{
+  display:block;
+}
+
+.arialblack{
+  font-family: arial black, sans-serif);
+}
+.tomorrow{
+    font-family: 'Tomorrow', sans-serif;
+}
+.source{
+    font-family: 'Source Code Pro', monospace;
+}
+.dm{font-family: 'DM Serif Display', serif;}
+.zilla{font-family: 'Zilla Slab Highlight', cursive;}

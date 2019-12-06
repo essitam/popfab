@@ -24,12 +24,120 @@ container{
 	position: absolute;
 	top: 100px;
 }
+/* The Modal (background) */
+.modal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
 
+}
+
+/* Modal Content/Box */
+.modal-content {
+ margin: 15% auto; /* 15% from the top and centered */
+ padding: 20px;
+ border: 1px solid #888;
+ width: 80%; /* Could be more or less, depending on screen size */
+ background-color: rgb(255,255,255, 0.7);
+
+}
+
+/* The Close Button */
+.close {
+ color: #aaa;
+ float: right;
+ font-size: 28px;
+ font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+ color: black;
+ text-decoration: none;
+ cursor: pointer;
+}
+/* The Modal (background) */
+.modal2 {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+}
+
+/* The Close Button */
+.close2 {
+ color: #aaa;
+ float: right;
+ font-size: 28px;
+ font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+ color: black;
+ text-decoration: none;
+ cursor: pointer;
+}
+button{
+	background-color: right;
+	mix-blend-mode: difference;
+}
 </style>
 	</head>
+	<button id="myBtn2" class="float-right">biblio</button>
 
 	<body id="headerAnimation">
-
+		<!-- Trigger/Open The Modal -->
+	 <button id="myBtn" class="float-right">intro</button>
+	 <!-- The Modal -->
+	 <div id="myModal" class="modal">
+			 <!-- Modal content -->
+			 <div class="modal-content">
+				 <span class="close">&times;</span>
+				 <i>
+				 <p>During last summer, two creatures met. One of them left and they decided that they needed to continue the meeting through a series of exchanged texts, not separating where the writing of one ends and the other begins. This (an)archive exponentially grew and reached more than a hundred pages. Through collective writing, techniques were developed for living together even apart.
+				<br><br>
+				During that summer, we watched the last season of the TV series Twin Peaks. One of the main characters' manufactured doppelgängers travels to this world but keeps some tendencies of his past iteration from the black lodge, speaking words back to front (we heard him saying ‘vrey’ instead of ‘yrev’, which would be ‘very’ in this world). Moving with non-linear temporalities of letters attuned to our bodies in different chronological times zones while still living in spectropoetic togetherness. Calling it ‘I’m vrey into you’ resonated with the book of exchanged emails between McKenzie Wark and Kathy Acker in the mid-nineties, published as ‘I’m very into you’. 
+				<br><br>
+				This multimodal meeting of letters already found all kinds of iterations. Published in two different forms on two different platforms. Spoken out loud in two different forms at two different venues. Each time again realizing new configurations, not only of our writing, but also of our meeting. Not a meeting between one and the other, but between the many at once. The multiplicity of writing, the endless adding up of myriad voices, does not distill them into one. There is a one, as in a singularity at once, but it is still the many that came as one, one always already traversed by the many. Each ‘one’ beautifully nuanced to one another. The fabulatory, mobilized as a mode of collective storying, resists writing within contained words and worlds. It participates instead in each encounter yet to come. By feeling the fabulatory in the field of the suspense, it attunes to the not-yet of togetherness; the meeting of the many at once, each time again. </p>
+			</i>
+			 </div>
+	 </div>
+	 <!-- The Modal -->
+	 <div id="myModal2" class="modal2">
+			 <!-- Modal content -->
+			 <div class="modal-content">
+				 <span class="close2">&times;</span>
+<p>
+	Acker, K., Wark, M, et al. (2015). <i>I’m Very into You: Correspondence 1995-1996.</i> Los Angeles: Semiotext(e).
+<br><br>
+	Derrida, J., & Prenowitz, E. (1995). <i>Archive Fever: A Freudian Impression.</i> Diacritics, 25(2), 9. doi:10.2307/465144
+<br><br>
+	Ingold, T. (2013). <i>Making: Anthropology, Archeology, Art and Architecture.</i> London and New York: Routledge.
+<br><br>
+	Ludueña, F. (2015). <i>H.P. Lovecraft: The Disjunction in Being. </i>New York: Schism.
+<br><br>
+	Manning, E. (2016). <i>The Minor Gesture. </i>Durham: Duke University Press.
+<br><br>
+	Moten, F. (2018). <i>Stolen Life (Vol. 2).</i> Durham: Duke University Press.
+<br><br>
+	Murphie, A. (Forthcoming)<i> Media Alive: becoming-god; becoming-world.</i>
+<br><br>
+	Trento, F.B. (Forthcoming) <i>The Lure of The Ghost.</i>
+<br><br>
+	Whitehead, A.N. (1978). <i>Process and Reality.</i> New York: The Free Press
+</p>
+			 </div>
+	 </div>
 	<div class="container">
         <div class="row">
     <div class="col-sm">
@@ -47,6 +155,59 @@ container{
   </div>
 </div>
 
+
+    <script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on the button, open the modal
+btn2.onclick = function() {
+modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal2) {
+modal2.style.display = "none";
+}
+}
+    </script>
 
 	</body>
 </html>
